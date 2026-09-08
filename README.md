@@ -416,3 +416,14 @@ created automatically.
 
 This project is provided as an educational/portfolio reference implementation. You are free to use, modify,
 and extend it for personal, academic, or commercial purposes.
+
+## Author
+
+**Teki Akhil Venkat**
+
+B.Tech – Computer Science / AIML
+
+## License
+
+AI Road Damage Detection System Using
+Python, YOLOv8, Flask, OpenCV and SQLite.
