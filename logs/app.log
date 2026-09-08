@@ -1,0 +1,1085 @@
+2026-08-29 13:47:09 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 13:47:09 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 13:47:09 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 13:47:09 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.88.154:5000
+2026-08-29 13:47:09 | INFO     | werkzeug | Press CTRL+C to quit
+2026-08-29 13:47:09 | INFO     | werkzeug |  * Restarting with stat
+2026-08-29 13:47:14 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 13:47:14 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 13:47:14 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 13:47:14 | WARNING  | werkzeug |  * Debugger is active!
+2026-08-29 13:47:14 | INFO     | werkzeug |  * Debugger PIN: 413-648-563
+2026-08-29 13:48:40 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 13:48:40 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 13:48:40 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 13:48:40 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.88.154:5000
+2026-08-29 13:48:40 | INFO     | werkzeug | Press CTRL+C to quit
+2026-08-29 13:48:40 | INFO     | werkzeug |  * Restarting with stat
+2026-08-29 13:48:44 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 13:48:44 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 13:48:44 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 13:48:44 | WARNING  | werkzeug |  * Debugger is active!
+2026-08-29 13:48:44 | INFO     | werkzeug |  * Debugger PIN: 413-648-563
+2026-08-29 13:49:21 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:49:21] "GET / HTTP/1.1" 200 -
+2026-08-29 13:49:21 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:49:21] "GET /css/style.css HTTP/1.1" 200 -
+2026-08-29 13:49:21 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:49:21] "GET /js/app.js HTTP/1.1" 200 -
+2026-08-29 13:49:36 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-08-29 13:49:36 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\models\best.pt | classes=['0']
+2026-08-29 13:49:46 | INFO     | database | Inserted detection report id=1 filename=2b36199d4df1.jpg
+2026-08-29 13:49:46 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:49:46] "POST /upload-image HTTP/1.1" 200 -
+2026-08-29 13:49:46 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:49:46] "GET /outputs/annotated_5a9bde5b05c9.jpg HTTP/1.1" 200 -
+2026-08-29 13:50:06 | INFO     | detector | Video detection: 570 total frames (22.8s) -> processing 57 frames (every 10th), imgsz=320, half=False
+2026-08-29 13:50:42 | INFO     | detector | Video done: 57/570 frames processed in 35.88s (10.0x speedup)
+2026-08-29 13:50:42 | INFO     | database | Inserted detection report id=2 filename=0be078536de1.mp4
+2026-08-29 13:50:42 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:42] "POST /upload-video HTTP/1.1" 200 -
+2026-08-29 13:50:42 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:42] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 206 -
+2026-08-29 13:50:42 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:42] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 206 -
+2026-08-29 13:50:43 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:43] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 206 -
+2026-08-29 13:50:43 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:43] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 206 -
+2026-08-29 13:50:43 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:43] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 206 -
+2026-08-29 13:50:43 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:43] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 206 -
+2026-08-29 13:50:43 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:43] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 206 -
+2026-08-29 13:50:43 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:43] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 206 -
+2026-08-29 13:50:43 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:43] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 206 -
+2026-08-29 13:50:48 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:48] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 206 -
+2026-08-29 13:50:48 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:50:48] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 206 -
+2026-08-29 13:51:28 | INFO     | detector | Video detection: 570 total frames (22.8s) -> processing 57 frames (every 10th), imgsz=320, half=False
+2026-08-29 13:52:00 | INFO     | detector | Video done: 57/570 frames processed in 31.85s (10.0x speedup)
+2026-08-29 13:52:00 | INFO     | database | Inserted detection report id=3 filename=4d11308e3280.mp4
+2026-08-29 13:52:00 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:52:00] "POST /upload-video HTTP/1.1" 200 -
+2026-08-29 13:52:00 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:52:00] "GET /outputs/annotated_b2b857ec9f20.mp4 HTTP/1.1" 206 -
+2026-08-29 13:52:00 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:52:00] "GET /outputs/annotated_b2b857ec9f20.mp4 HTTP/1.1" 206 -
+2026-08-29 13:52:00 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:52:00] "GET /outputs/annotated_b2b857ec9f20.mp4 HTTP/1.1" 206 -
+2026-08-29 13:52:00 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:52:00] "GET /outputs/annotated_b2b857ec9f20.mp4 HTTP/1.1" 206 -
+2026-08-29 13:52:04 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 13:52:04] "GET /outputs/annotated_b2b857ec9f20.mp4 HTTP/1.1" 206 -
+2026-08-29 14:03:41 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 14:03:41 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 14:03:41 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 14:03:41 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.88.154:5000
+2026-08-29 14:03:41 | INFO     | werkzeug | Press CTRL+C to quit
+2026-08-29 14:03:41 | INFO     | werkzeug |  * Restarting with stat
+2026-08-29 14:03:45 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 14:03:45 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 14:03:45 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 14:03:45 | WARNING  | werkzeug |  * Debugger is active!
+2026-08-29 14:03:45 | INFO     | werkzeug |  * Debugger PIN: 413-648-563
+2026-08-29 14:04:05 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:04:05] "GET / HTTP/1.1" 304 -
+2026-08-29 14:04:05 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:04:05] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:04:05 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:04:05] "GET /js/app.js HTTP/1.1" 304 -
+2026-08-29 14:05:33 | INFO     | werkzeug |  * Detected change in 'C:\\Users\\akhil\\OneDrive\\Desktop\\Road-Damage-AI-System-2026\\backend\\routes.py', reloading
+2026-08-29 14:05:33 | INFO     | werkzeug |  * Detected change in 'C:\\Users\\akhil\\OneDrive\\Desktop\\Road-Damage-AI-System-2026\\backend\\routes.py', reloading
+2026-08-29 14:05:34 | INFO     | werkzeug |  * Restarting with stat
+2026-08-29 14:05:34 | INFO     | werkzeug |  * Restarting with stat
+2026-08-29 14:05:40 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 14:05:40 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 14:05:40 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 14:05:40 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 14:05:40 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 14:05:40 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 14:05:40 | WARNING  | werkzeug |  * Debugger is active!
+2026-08-29 14:05:40 | WARNING  | werkzeug |  * Debugger is active!
+2026-08-29 14:05:40 | INFO     | werkzeug |  * Debugger PIN: 413-648-563
+2026-08-29 14:05:40 | INFO     | werkzeug |  * Debugger PIN: 413-648-563
+2026-08-29 14:05:55 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 14:05:55 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 14:05:55 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 14:05:55 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.88.154:5000
+2026-08-29 14:05:55 | INFO     | werkzeug | Press CTRL+C to quit
+2026-08-29 14:05:55 | INFO     | werkzeug |  * Restarting with stat
+2026-08-29 14:05:58 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 14:05:58 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 14:05:58 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 14:05:58 | WARNING  | werkzeug |  * Debugger is active!
+2026-08-29 14:05:58 | INFO     | werkzeug |  * Debugger PIN: 413-648-563
+2026-08-29 14:06:10 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:10] "GET / HTTP/1.1" 200 -
+2026-08-29 14:06:10 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:10] "GET /css/dashboard.css HTTP/1.1" 200 -
+2026-08-29 14:06:10 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:10] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:06:11 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:11] "GET /js/dashboard.js HTTP/1.1" 200 -
+2026-08-29 14:06:11 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:11] "GET /statistics HTTP/1.1" 200 -
+2026-08-29 14:06:23 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:23] "GET / HTTP/1.1" 304 -
+2026-08-29 14:06:23 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:23] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:06:23 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:23] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-08-29 14:06:23 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:23] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-08-29 14:06:23 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:23] "GET /statistics HTTP/1.1" 200 -
+2026-08-29 14:06:42 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:42] "GET / HTTP/1.1" 304 -
+2026-08-29 14:06:43 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:43] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:06:43 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:43] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-08-29 14:06:43 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:43] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-08-29 14:06:43 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:43] "GET /statistics HTTP/1.1" 200 -
+2026-08-29 14:06:52 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:52] "GET /index.html HTTP/1.1" 200 -
+2026-08-29 14:06:52 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:52] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:06:52 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:52] "GET /js/app.js HTTP/1.1" 304 -
+2026-08-29 14:06:56 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:56] "GET /dashboard.html HTTP/1.1" 200 -
+2026-08-29 14:06:56 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:56] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:06:56 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:56] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-08-29 14:06:56 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:56] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-08-29 14:06:56 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:06:56] "GET /statistics HTTP/1.1" 200 -
+2026-08-29 14:07:25 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:07:25] "GET / HTTP/1.1" 304 -
+2026-08-29 14:07:25 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:07:25] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:07:25 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:07:25] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-08-29 14:07:26 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:07:26] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-08-29 14:07:26 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:07:26] "GET /statistics HTTP/1.1" 200 -
+2026-08-29 14:07:47 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:07:47] "GET /index.html HTTP/1.1" 304 -
+2026-08-29 14:07:47 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:07:47] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:07:47 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:07:47] "GET /js/app.js HTTP/1.1" 304 -
+2026-08-29 14:08:15 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-08-29 14:08:15 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\models\best.pt | classes=['0']
+2026-08-29 14:08:23 | INFO     | database | Inserted detection report id=4 filename=785cb41d8d7e.jpg
+2026-08-29 14:08:23 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:08:23] "POST /upload-image HTTP/1.1" 200 -
+2026-08-29 14:08:23 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:08:23] "GET /outputs/annotated_f296588405eb.jpg HTTP/1.1" 200 -
+2026-08-29 14:08:36 | INFO     | database | Inserted detection report id=5 filename=5b6e907ec5a2.jpg
+2026-08-29 14:08:36 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:08:36] "POST /upload-image HTTP/1.1" 200 -
+2026-08-29 14:08:37 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:08:37] "GET /outputs/annotated_102789863bde.jpg HTTP/1.1" 200 -
+2026-08-29 14:09:24 | INFO     | database | Inserted detection report id=6 filename=e9c4770662ea.jpg
+2026-08-29 14:09:24 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:09:24] "POST /upload-image HTTP/1.1" 200 -
+2026-08-29 14:09:24 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:09:24] "GET /outputs/annotated_6bd6f98df346.jpg HTTP/1.1" 200 -
+2026-08-29 14:13:52 | INFO     | detector | Video detection: 240 total frames (8.0s) -> processing 24 frames (every 10th), imgsz=320, half=False
+2026-08-29 14:14:02 | INFO     | detector | Video done: 24/240 frames processed in 9.96s (10.0x speedup)
+2026-08-29 14:14:02 | INFO     | database | Inserted detection report id=7 filename=346236_medium.mp4
+2026-08-29 14:14:02 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:02] "POST /upload-video HTTP/1.1" 200 -
+2026-08-29 14:14:02 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:02] "GET /outputs/annotated_3f7ae4480904.mp4 HTTP/1.1" 206 -
+2026-08-29 14:14:02 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:02] "GET /outputs/annotated_3f7ae4480904.mp4 HTTP/1.1" 206 -
+2026-08-29 14:14:03 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:03] "GET /outputs/annotated_3f7ae4480904.mp4 HTTP/1.1" 206 -
+2026-08-29 14:14:03 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:03] "GET /outputs/annotated_3f7ae4480904.mp4 HTTP/1.1" 206 -
+2026-08-29 14:14:03 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:03] "GET /outputs/annotated_3f7ae4480904.mp4 HTTP/1.1" 206 -
+2026-08-29 14:14:08 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:08] "GET /outputs/annotated_3f7ae4480904.mp4 HTTP/1.1" 206 -
+2026-08-29 14:14:08 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:08] "GET /outputs/annotated_3f7ae4480904.mp4 HTTP/1.1" 206 -
+2026-08-29 14:14:41 | INFO     | detector | Video detection: 240 total frames (8.0s) -> processing 24 frames (every 10th), imgsz=320, half=False
+2026-08-29 14:14:55 | INFO     | detector | Video done: 24/240 frames processed in 13.94s (10.0x speedup)
+2026-08-29 14:14:55 | INFO     | database | Inserted detection report id=8 filename=338958_1.mp4
+2026-08-29 14:14:55 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:55] "POST /upload-video HTTP/1.1" 200 -
+2026-08-29 14:14:55 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:55] "GET /outputs/annotated_e197ef76679e.mp4 HTTP/1.1" 206 -
+2026-08-29 14:14:56 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:56] "GET /outputs/annotated_e197ef76679e.mp4 HTTP/1.1" 206 -
+2026-08-29 14:14:56 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:56] "GET /outputs/annotated_e197ef76679e.mp4 HTTP/1.1" 206 -
+2026-08-29 14:14:56 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:56] "GET /outputs/annotated_e197ef76679e.mp4 HTTP/1.1" 206 -
+2026-08-29 14:14:59 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:14:59] "GET /outputs/annotated_e197ef76679e.mp4 HTTP/1.1" 206 -
+2026-08-29 14:16:03 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:03] "GET /dashboard.html HTTP/1.1" 200 -
+2026-08-29 14:16:03 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:03] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:16:03 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:03] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-08-29 14:16:04 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:04] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-08-29 14:16:04 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:04] "GET /statistics HTTP/1.1" 200 -
+2026-08-29 14:16:26 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:26] "GET /history.html HTTP/1.1" 200 -
+2026-08-29 14:16:26 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:26] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:16:26 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:26] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-08-29 14:16:26 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:26] "GET /js/history.js HTTP/1.1" 200 -
+2026-08-29 14:16:27 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:27] "GET /history HTTP/1.1" 200 -
+2026-08-29 14:16:34 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:34] "GET /index.html HTTP/1.1" 304 -
+2026-08-29 14:16:34 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:34] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:16:34 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:34] "GET /js/app.js HTTP/1.1" 304 -
+2026-08-29 14:16:35 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:35] "GET /dashboard.html HTTP/1.1" 304 -
+2026-08-29 14:16:35 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:35] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:16:35 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:35] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-08-29 14:16:35 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:35] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-08-29 14:16:35 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:35] "GET /statistics HTTP/1.1" 200 -
+2026-08-29 14:16:45 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:45] "GET /index.html HTTP/1.1" 304 -
+2026-08-29 14:16:45 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:45] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:16:45 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:16:45] "GET /js/app.js HTTP/1.1" 304 -
+2026-08-29 14:26:26 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:26:26] "GET /index.html HTTP/1.1" 304 -
+2026-08-29 14:26:26 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:26:26] "GET /css/style.css HTTP/1.1" 304 -
+2026-08-29 14:26:26 | INFO     | werkzeug | 127.0.0.1 - - [29/Aug/2026 14:26:26] "GET /js/app.js HTTP/1.1" 304 -
+2026-08-29 15:20:35 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 15:20:35 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 15:20:35 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 15:20:35 | INFO     | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.131.51.17:5000
+2026-08-29 15:20:35 | INFO     | werkzeug | [33mPress CTRL+C to quit[0m
+2026-08-29 15:20:35 | INFO     | werkzeug |  * Restarting with stat
+2026-08-29 15:20:41 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-08-29 15:20:41 | INFO     | __main__ | Flask application created and configured successfully.
+2026-08-29 15:20:41 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-08-29 15:20:41 | WARNING  | werkzeug |  * Debugger is active!
+2026-08-29 15:20:41 | INFO     | werkzeug |  * Debugger PIN: 119-582-937
+2026-09-01 12:08:15 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-01 12:08:15 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-01 12:08:15 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-01 12:08:15 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.241.73.17:5000
+2026-09-01 12:08:15 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-01 12:08:15 | INFO     | werkzeug |  * Restarting with stat
+2026-09-01 12:08:20 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-01 12:08:20 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-01 12:08:20 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-01 12:08:20 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-01 12:08:20 | INFO     | werkzeug |  * Debugger PIN: 132-377-531
+2026-09-01 12:20:57 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-01 12:20:57 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-01 12:20:57 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-01 12:20:57 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.69.35:5000
+2026-09-01 12:20:57 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-01 12:20:57 | INFO     | werkzeug |  * Restarting with stat
+2026-09-01 12:21:03 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-01 12:21:03 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-01 12:21:03 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-01 12:21:03 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-01 12:21:03 | INFO     | werkzeug |  * Debugger PIN: 132-377-531
+2026-09-01 12:23:49 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:23:49] "GET / HTTP/1.1" 200 -
+2026-09-01 12:23:49 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:23:49] "GET /css/style.css HTTP/1.1" 200 -
+2026-09-01 12:23:49 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:23:49] "GET /css/dashboard.css HTTP/1.1" 200 -
+2026-09-01 12:23:50 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:23:50] "GET /js/dashboard.js HTTP/1.1" 200 -
+2026-09-01 12:23:50 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:23:50] "GET /statistics HTTP/1.1" 200 -
+2026-09-01 12:23:52 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-01 12:23:52 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:23:52] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-01 12:23:53 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:23:53] "GET /index.html HTTP/1.1" 200 -
+2026-09-01 12:23:53 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:23:53] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-01 12:23:53 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:23:53] "GET /js/app.js HTTP/1.1" 200 -
+2026-09-01 12:24:08 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-01 12:24:08 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | classes=['0']
+2026-09-01 12:24:16 | INFO     | database | Inserted detection report id=9 filename=images_1.jpg
+2026-09-01 12:24:16 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:24:16] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:24:16 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:24:16] "GET /outputs/annotated_a3b2484a8d04.jpg HTTP/1.1" 200 -
+2026-09-01 12:24:53 | INFO     | database | Inserted detection report id=10 filename=images_1.jpg
+2026-09-01 12:24:53 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:24:53] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:24:53 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:24:53] "GET /outputs/annotated_05716c106234.jpg HTTP/1.1" 200 -
+2026-09-01 12:25:14 | INFO     | database | Inserted detection report id=11 filename=images.jpg
+2026-09-01 12:25:14 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:25:14] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:25:14 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:25:14] "GET /outputs/annotated_414aaff4e920.jpg HTTP/1.1" 200 -
+2026-09-01 12:31:36 | INFO     | database | Inserted detection report id=12 filename=images_2.jpg
+2026-09-01 12:31:36 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:31:36] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:31:36 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:31:36] "GET /outputs/annotated_40776e6053e5.jpg HTTP/1.1" 200 -
+2026-09-01 12:31:44 | INFO     | database | Inserted detection report id=13 filename=images_2.jpg
+2026-09-01 12:31:44 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:31:44] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:31:44 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:31:44] "GET /outputs/annotated_06c6b88c283c.jpg HTTP/1.1" 200 -
+2026-09-01 12:40:35 | INFO     | database | Inserted detection report id=14 filename=05716c106234.jpg
+2026-09-01 12:40:35 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:40:35] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:40:35 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:40:35] "GET /outputs/annotated_04576516dfbf.jpg HTTP/1.1" 200 -
+2026-09-01 12:41:06 | INFO     | database | Inserted detection report id=15 filename=6bd6f98df346.jpg
+2026-09-01 12:41:06 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:41:06] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:41:06 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:41:06] "GET /outputs/annotated_933d4e2cc5f8.jpg HTTP/1.1" 200 -
+2026-09-01 12:43:02 | INFO     | database | Inserted detection report id=16 filename=shutterstock_1336516589-scaled.jpg
+2026-09-01 12:43:02 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:43:02] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:43:02 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:43:02] "GET /outputs/annotated_e7bd77b0d45e.jpg HTTP/1.1" 200 -
+2026-09-01 12:45:31 | INFO     | database | Inserted detection report id=17 filename=roads-2.jpeg
+2026-09-01 12:45:31 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:45:31] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:45:31 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:45:31] "GET /outputs/annotated_d520ed285228.jpeg HTTP/1.1" 200 -
+2026-09-01 12:48:17 | INFO     | database | Inserted detection report id=18 filename=05716c106234.jpg
+2026-09-01 12:48:17 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:48:17] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:48:17 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:48:17] "GET /outputs/annotated_e5f23e44c869.jpg HTTP/1.1" 200 -
+2026-09-01 12:48:25 | INFO     | database | Inserted detection report id=19 filename=05716c106234.jpg
+2026-09-01 12:48:25 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:48:25] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:48:25 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:48:25] "GET /outputs/annotated_c28e9157da89.jpg HTTP/1.1" 200 -
+2026-09-01 12:48:55 | INFO     | database | Inserted detection report id=20 filename=roads-2.jpeg
+2026-09-01 12:48:55 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:48:55] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:48:55 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:48:55] "GET /outputs/annotated_e20364ed7df6.jpeg HTTP/1.1" 200 -
+2026-09-01 12:49:54 | INFO     | database | Inserted detection report id=21 filename=shutterstock_1336516589-scaled.jpg
+2026-09-01 12:49:54 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:49:54] "POST /upload-image HTTP/1.1" 200 -
+2026-09-01 12:49:54 | INFO     | werkzeug | 127.0.0.1 - - [01/Sep/2026 12:49:54] "GET /outputs/annotated_3b97fe1c637a.jpg HTTP/1.1" 200 -
+2026-09-03 09:46:04 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 09:46:04 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 09:46:04 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 09:46:04 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.69.35:5000
+2026-09-03 09:46:04 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-03 09:46:04 | INFO     | werkzeug |  * Restarting with stat
+2026-09-03 09:46:16 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 09:46:16 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 09:46:16 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 09:46:16 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-03 09:46:16 | INFO     | werkzeug |  * Debugger PIN: 115-065-372
+2026-09-03 09:50:24 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:50:24] "GET / HTTP/1.1" 200 -
+2026-09-03 09:50:25 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:50:25] "GET /css/style.css HTTP/1.1" 200 -
+2026-09-03 09:50:25 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:50:25] "GET /css/dashboard.css HTTP/1.1" 200 -
+2026-09-03 09:50:25 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:50:25] "GET /js/dashboard.js HTTP/1.1" 200 -
+2026-09-03 09:50:34 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:50:34] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 09:50:41 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:50:41] "GET /index.html HTTP/1.1" 200 -
+2026-09-03 09:50:42 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:50:42] "GET /js/app.js HTTP/1.1" 200 -
+2026-09-03 09:50:42 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:50:42] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 09:50:44 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-03 09:50:44 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:50:44] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-03 09:52:17 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-03 09:52:23 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | classes=['0']
+2026-09-03 09:55:37 | INFO     | database | Inserted detection report id=22 filename=05716c106234.jpg
+2026-09-03 09:55:37 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:55:37] "POST /upload-image HTTP/1.1" 200 -
+2026-09-03 09:55:38 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:55:38] "GET /outputs/annotated_f009cd368044.jpg HTTP/1.1" 200 -
+2026-09-03 09:55:39 | INFO     | database | Inserted detection report id=23 filename=933d4e2cc5f8.jpg
+2026-09-03 09:55:39 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:55:39] "POST /upload-image HTTP/1.1" 200 -
+2026-09-03 09:55:39 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 09:55:39] "GET /outputs/annotated_adc77854c9d1.jpg HTTP/1.1" 200 -
+2026-09-03 10:01:47 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 10:01:47 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 10:01:47 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 10:01:47 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.69.35:5000
+2026-09-03 10:01:47 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-03 10:01:47 | INFO     | werkzeug |  * Restarting with stat
+2026-09-03 10:01:58 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 10:01:58 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 10:01:58 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 10:01:58 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-03 10:01:58 | INFO     | werkzeug |  * Debugger PIN: 627-671-519
+2026-09-03 10:15:40 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 10:15:40 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 10:15:40 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 10:15:40 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.69.35:5000
+2026-09-03 10:15:40 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-03 10:15:40 | INFO     | werkzeug |  * Restarting with stat
+2026-09-03 10:15:45 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 10:15:45 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 10:15:45 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 10:15:45 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-03 10:15:45 | INFO     | werkzeug |  * Debugger PIN: 132-377-531
+2026-09-03 10:15:54 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:15:54] "GET / HTTP/1.1" 200 -
+2026-09-03 10:15:54 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:15:54] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 10:15:54 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:15:54] "GET /css/dashboard.css HTTP/1.1" 200 -
+2026-09-03 10:15:55 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:15:55] "GET /js/dashboard.js HTTP/1.1" 200 -
+2026-09-03 10:15:55 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:15:55] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 10:15:59 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-03 10:15:59 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:15:59] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-03 10:16:05 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:16:05] "GET /index.html HTTP/1.1" 200 -
+2026-09-03 10:16:05 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:16:05] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 10:16:05 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:16:05] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 10:16:24 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-03 10:16:25 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | classes=['0']
+2026-09-03 10:16:41 | INFO     | database | Inserted detection report id=24 filename=05716c106234.jpg
+2026-09-03 10:16:41 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:16:41] "POST /upload-image HTTP/1.1" 200 -
+2026-09-03 10:16:41 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:16:41] "GET /outputs/annotated_6a82af659864.jpg HTTP/1.1" 200 -
+2026-09-03 10:40:52 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 10:40:52 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 10:40:52 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 10:40:53 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.69.35:5000
+2026-09-03 10:40:53 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-03 10:40:53 | INFO     | werkzeug |  * Restarting with stat
+2026-09-03 10:41:18 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 10:41:18 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 10:41:18 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 10:41:18 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-03 10:41:18 | INFO     | werkzeug |  * Debugger PIN: 132-377-531
+2026-09-03 10:48:08 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 10:48:08 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 10:48:08 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 10:48:08 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.69.35:5000
+2026-09-03 10:48:08 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-03 10:48:08 | INFO     | werkzeug |  * Restarting with stat
+2026-09-03 10:48:37 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 10:48:37 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 10:48:37 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 10:48:37 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-03 10:48:37 | INFO     | werkzeug |  * Debugger PIN: 115-065-372
+2026-09-03 10:48:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:48:39] "GET / HTTP/1.1" 304 -
+2026-09-03 10:48:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:48:39] "GET / HTTP/1.1" 304 -
+2026-09-03 10:48:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:48:39] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 10:48:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:48:39] "GET /css/dashboard.css HTTP/1.1" 200 -
+2026-09-03 10:48:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:48:39] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 10:48:40 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:48:40] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 10:48:40 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:48:40] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 10:48:54 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:48:54] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 10:48:54 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:48:54] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 10:48:54 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:48:54] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 10:49:03 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-03 10:49:03 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | classes=['0']
+2026-09-03 10:49:17 | INFO     | database | Inserted detection report id=25 filename=933d4e2cc5f8.jpg
+2026-09-03 10:49:17 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:49:17] "POST /upload-image HTTP/1.1" 200 -
+2026-09-03 10:49:17 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:49:17] "GET /outputs/annotated_224c6dc5299e.jpg HTTP/1.1" 200 -
+2026-09-03 10:54:03 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 10:54:03 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 10:54:03 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 10:54:03 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.69.35:5000
+2026-09-03 10:54:03 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-03 10:54:03 | INFO     | werkzeug |  * Restarting with stat
+2026-09-03 10:54:44 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 10:54:44 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 10:54:44 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 10:54:45 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-03 10:54:45 | INFO     | werkzeug |  * Debugger PIN: 115-065-372
+2026-09-03 10:54:57 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:54:57] "GET / HTTP/1.1" 304 -
+2026-09-03 10:54:58 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:54:58] "GET / HTTP/1.1" 200 -
+2026-09-03 10:54:58 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:54:58] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 10:54:58 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:54:58] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 10:55:00 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:55:00] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 10:55:00 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:55:00] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 10:55:10 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:55:10] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 10:55:10 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:55:10] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 10:55:10 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:55:10] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 10:55:24 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-03 10:55:32 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | classes=['0']
+2026-09-03 10:56:57 | INFO     | database | Inserted detection report id=26 filename=414aaff4e920.jpg
+2026-09-03 10:56:57 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:56:57] "POST /upload-image HTTP/1.1" 200 -
+2026-09-03 10:56:57 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:56:57] "GET /outputs/annotated_d3ab55fde523.jpg HTTP/1.1" 200 -
+2026-09-03 10:57:46 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:57:46] "GET / HTTP/1.1" 304 -
+2026-09-03 10:57:46 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:57:46] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 10:57:46 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:57:46] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 10:57:47 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:57:47] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 10:57:47 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 10:57:47] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 11:02:25 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 11:02:25 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 11:02:25 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 11:02:25 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.69.35:5000
+2026-09-03 11:02:25 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-03 11:02:25 | INFO     | werkzeug |  * Restarting with stat
+2026-09-03 11:02:46 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 11:02:46 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 11:02:46 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 11:02:46 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-03 11:02:46 | INFO     | werkzeug |  * Debugger PIN: 115-065-372
+2026-09-03 11:02:48 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:02:48] "GET / HTTP/1.1" 200 -
+2026-09-03 11:02:48 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:02:48] "GET /css/style.css HTTP/1.1" 200 -
+2026-09-03 11:02:48 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:02:48] "GET /css/dashboard.css HTTP/1.1" 200 -
+2026-09-03 11:02:48 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:02:48] "GET /js/dashboard.js HTTP/1.1" 200 -
+2026-09-03 11:02:48 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:02:48] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 11:02:52 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:02:52] "GET /index.html HTTP/1.1" 200 -
+2026-09-03 11:02:52 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:02:52] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 11:02:52 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:02:52] "GET /js/app.js HTTP/1.1" 200 -
+2026-09-03 11:03:24 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-03 11:03:25 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | classes=['0']
+2026-09-03 11:04:01 | INFO     | database | Inserted detection report id=27 filename=933d4e2cc5f8.jpg
+2026-09-03 11:04:02 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:04:02] "POST /upload-image HTTP/1.1" 200 -
+2026-09-03 11:04:02 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:04:02] "GET /outputs/annotated_43321c54dec0.jpg HTTP/1.1" 200 -
+2026-09-03 11:33:38 | INFO     | database | Inserted detection report id=28 filename=5.jpeg
+2026-09-03 11:33:38 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:33:38] "POST /upload-image HTTP/1.1" 200 -
+2026-09-03 11:33:38 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:33:38] "GET /outputs/annotated_3ce959d95536.jpeg HTTP/1.1" 200 -
+2026-09-03 11:33:44 | INFO     | database | Inserted detection report id=29 filename=5.jpeg
+2026-09-03 11:33:44 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:33:44] "POST /upload-image HTTP/1.1" 200 -
+2026-09-03 11:33:44 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:33:44] "GET /outputs/annotated_5f589bf822c6.jpeg HTTP/1.1" 200 -
+2026-09-03 11:53:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:39] "GET /dashboard.html HTTP/1.1" 200 -
+2026-09-03 11:53:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:39] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 11:53:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:39] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 11:53:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:39] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 11:53:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:39] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 11:53:45 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:45] "GET /history.html HTTP/1.1" 200 -
+2026-09-03 11:53:45 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:45] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 11:53:45 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:45] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 11:53:45 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:45] "GET /js/history.js HTTP/1.1" 200 -
+2026-09-03 11:53:45 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:45] "GET /history HTTP/1.1" 200 -
+2026-09-03 11:53:56 | INFO     | database | Deleted detection report id=4
+2026-09-03 11:53:56 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:56] "DELETE /history/4 HTTP/1.1" 200 -
+2026-09-03 11:53:56 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:53:56] "GET /history HTTP/1.1" 200 -
+2026-09-03 11:55:51 | INFO     | utils | Generated CSV report: C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\reports\detection_report_d6775929.csv
+2026-09-03 11:55:51 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 11:55:51] "GET /download-report HTTP/1.1" 200 -
+2026-09-03 12:02:28 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 12:02:28 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 12:02:28 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 12:02:28 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.69.35:5000
+2026-09-03 12:02:28 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-03 12:02:28 | INFO     | werkzeug |  * Restarting with stat
+2026-09-03 12:02:34 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 12:02:34 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 12:02:34 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 12:02:34 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-03 12:02:34 | INFO     | werkzeug |  * Debugger PIN: 115-065-372
+2026-09-03 12:02:35 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 12:02:35] "GET / HTTP/1.1" 304 -
+2026-09-03 12:02:35 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 12:02:35] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 12:02:35 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 12:02:35] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 12:02:35 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 12:02:35] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 12:02:36 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 12:02:36] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 12:02:54 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 12:02:54] "GET / HTTP/1.1" 200 -
+2026-09-03 12:02:55 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 12:02:55] "GET /css/dashboard.css HTTP/1.1" 200 -
+2026-09-03 12:02:55 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 12:02:55] "GET /js/dashboard.js HTTP/1.1" 200 -
+2026-09-03 12:02:55 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 12:02:55] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 12:02:56 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 12:02:56] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 12:02:57 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-03 12:02:57 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 12:02:57] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-03 12:02:58 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 12:02:58] "GET /index.html HTTP/1.1" 200 -
+2026-09-03 12:02:59 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 12:02:59] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 12:02:59 | INFO     | werkzeug | 10.50.69.35 - - [03/Sep/2026 12:02:59] "GET /js/app.js HTTP/1.1" 200 -
+2026-09-03 14:23:01 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 14:23:01 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 14:23:01 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 14:23:01 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.69.35:5000
+2026-09-03 14:23:01 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-03 14:23:01 | INFO     | werkzeug |  * Restarting with stat
+2026-09-03 14:23:07 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 14:23:07 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 14:23:07 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 14:23:07 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-03 14:23:07 | INFO     | werkzeug |  * Debugger PIN: 115-065-372
+2026-09-03 14:23:53 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 14:23:53] "GET / HTTP/1.1" 304 -
+2026-09-03 14:23:55 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 14:23:55] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 14:23:55 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 14:23:55] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 14:23:55 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 14:23:55] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 14:23:55 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 14:23:55] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 14:23:58 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 14:23:58] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 14:23:58 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 14:23:58] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 14:23:58 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 14:23:58] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 14:24:31 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-03 14:24:31 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | classes=['0']
+2026-09-03 14:24:37 | INFO     | database | Inserted detection report id=30 filename=1.jpg
+2026-09-03 14:24:37 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 14:24:37] "POST /upload-image HTTP/1.1" 200 -
+2026-09-03 14:24:37 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 14:24:37] "GET /outputs/annotated_dcfb15b4cf37.jpg HTTP/1.1" 200 -
+2026-09-03 19:01:37 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 19:01:37 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 19:01:37 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 19:01:37 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.4:5000
+2026-09-03 19:01:37 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-03 19:01:37 | INFO     | werkzeug |  * Restarting with stat
+2026-09-03 19:01:46 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-03 19:01:46 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-03 19:01:46 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-03 19:01:46 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-03 19:01:46 | INFO     | werkzeug |  * Debugger PIN: 115-065-372
+2026-09-03 19:01:47 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:01:47] "GET / HTTP/1.1" 200 -
+2026-09-03 19:01:47 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:01:47] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 19:01:47 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:01:47] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 19:01:47 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:01:47] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 19:01:47 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:01:47] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 19:01:52 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:01:52] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 19:01:53 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:01:53] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 19:01:53 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:01:53] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 19:02:04 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-03 19:02:04 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | classes=['0']
+2026-09-03 19:02:16 | INFO     | database | Inserted detection report id=31 filename=3.jpg
+2026-09-03 19:02:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:02:16] "POST /upload-image HTTP/1.1" 200 -
+2026-09-03 19:02:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:02:16] "GET /outputs/annotated_3e228139497a.jpg HTTP/1.1" 200 -
+2026-09-03 19:02:22 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:02:22] "GET /history.html HTTP/1.1" 304 -
+2026-09-03 19:02:23 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:02:23] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 19:02:23 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:02:23] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 19:02:23 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:02:23] "GET /js/history.js HTTP/1.1" 304 -
+2026-09-03 19:02:23 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:02:23] "GET /history HTTP/1.1" 200 -
+2026-09-03 19:02:32 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:02:32] "GET /outputs/annotated_3e228139497a.jpg HTTP/1.1" 304 -
+2026-09-03 19:03:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:16] "GET / HTTP/1.1" 304 -
+2026-09-03 19:03:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:16] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 19:03:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:16] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 19:03:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:16] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 19:03:17 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:17] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 19:03:20 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-03 19:03:20 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:20] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-03 19:03:23 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:23] "GET /history.html HTTP/1.1" 200 -
+2026-09-03 19:03:23 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:23] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 19:03:23 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:23] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 19:03:23 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:23] "GET /js/history.js HTTP/1.1" 200 -
+2026-09-03 19:03:24 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:24] "GET /history HTTP/1.1" 200 -
+2026-09-03 19:03:28 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:28] "GET /outputs/annotated_3e228139497a.jpg HTTP/1.1" 200 -
+2026-09-03 19:03:38 | INFO     | utils | Generated CSV report: C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\reports\detection_report_78eba98c.csv
+2026-09-03 19:03:38 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 19:03:38] "GET /download-report HTTP/1.1" 200 -
+2026-09-03 20:07:26 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-03 20:07:26 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:07:26] "GET /outputs/annotated_3f7ae4480904.mp4 HTTP/1.1" 404 -
+2026-09-03 20:07:36 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-03 20:07:36 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:07:36] "GET /outputs/annotated_3f7ae4480904.mp4 HTTP/1.1" 404 -
+2026-09-03 20:07:43 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-03 20:07:43 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:07:43] "GET /outputs/annotated_a3b2484a8d04.jpg HTTP/1.1" 404 -
+2026-09-03 20:07:53 | INFO     | utils | Generated CSV report: C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\reports\detection_report_6a2693c6.csv
+2026-09-03 20:07:53 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:07:53] "GET /download-report HTTP/1.1" 200 -
+2026-09-03 20:08:30 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:08:30] "GET /outputs/annotated_224c6dc5299e.jpg HTTP/1.1" 200 -
+2026-09-03 20:08:42 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:08:42] "GET /outputs/annotated_3e228139497a.jpg HTTP/1.1" 304 -
+2026-09-03 20:08:50 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:08:50] "GET /outputs/annotated_dcfb15b4cf37.jpg HTTP/1.1" 200 -
+2026-09-03 20:08:56 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:08:56] "GET /outputs/annotated_5f589bf822c6.jpeg HTTP/1.1" 200 -
+2026-09-03 20:09:01 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:01] "GET /outputs/annotated_3ce959d95536.jpeg HTTP/1.1" 200 -
+2026-09-03 20:09:09 | INFO     | database | Deleted detection report id=28
+2026-09-03 20:09:09 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:09] "DELETE /history/28 HTTP/1.1" 200 -
+2026-09-03 20:09:09 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:09] "GET /history HTTP/1.1" 200 -
+2026-09-03 20:09:12 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:12] "GET /outputs/annotated_43321c54dec0.jpg HTTP/1.1" 200 -
+2026-09-03 20:09:20 | INFO     | database | Deleted detection report id=27
+2026-09-03 20:09:20 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:20] "DELETE /history/27 HTTP/1.1" 200 -
+2026-09-03 20:09:20 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:20] "GET /history HTTP/1.1" 200 -
+2026-09-03 20:09:23 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:23] "GET /outputs/annotated_224c6dc5299e.jpg HTTP/1.1" 304 -
+2026-09-03 20:09:30 | INFO     | database | Deleted detection report id=25
+2026-09-03 20:09:30 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:30] "DELETE /history/25 HTTP/1.1" 200 -
+2026-09-03 20:09:31 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:31] "GET /history HTTP/1.1" 200 -
+2026-09-03 20:09:35 | INFO     | database | Deleted detection report id=23
+2026-09-03 20:09:35 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:35] "DELETE /history/23 HTTP/1.1" 200 -
+2026-09-03 20:09:35 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:35] "GET /history HTTP/1.1" 200 -
+2026-09-03 20:09:41 | INFO     | database | Deleted detection report id=15
+2026-09-03 20:09:41 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:41] "DELETE /history/15 HTTP/1.1" 200 -
+2026-09-03 20:09:41 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:41] "GET /history HTTP/1.1" 200 -
+2026-09-03 20:09:46 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:46] "GET /outputs/annotated_5a9bde5b05c9.jpg HTTP/1.1" 200 -
+2026-09-03 20:09:53 | INFO     | database | Deleted detection report id=1
+2026-09-03 20:09:53 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:53] "DELETE /history/1 HTTP/1.1" 200 -
+2026-09-03 20:09:53 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:53] "GET /history HTTP/1.1" 200 -
+2026-09-03 20:09:56 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-03 20:09:56 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:09:56] "GET /outputs/annotated_c36e48a8956c.mp4 HTTP/1.1" 404 -
+2026-09-03 20:10:16 | INFO     | database | Deleted detection report id=21
+2026-09-03 20:10:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:10:16] "DELETE /history/21 HTTP/1.1" 200 -
+2026-09-03 20:10:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:10:16] "GET /history HTTP/1.1" 200 -
+2026-09-03 20:10:27 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:10:27] "GET /outputs/annotated_414aaff4e920.jpg HTTP/1.1" 200 -
+2026-09-03 20:10:41 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:10:41] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 20:10:41 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:10:41] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:10:41 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:10:41] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 20:10:44 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:10:44] "GET /dashboard.html HTTP/1.1" 200 -
+2026-09-03 20:10:44 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:10:44] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:10:44 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:10:44] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 20:10:44 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:10:44] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 20:10:45 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:10:45] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 20:23:04 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:04] "GET /history.html HTTP/1.1" 304 -
+2026-09-03 20:23:04 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:04] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:23:04 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:04] "GET /js/history.js HTTP/1.1" 304 -
+2026-09-03 20:23:04 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:04] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 20:23:05 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:05] "GET /history HTTP/1.1" 200 -
+2026-09-03 20:23:10 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:10] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 20:23:10 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:10] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:23:10 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:10] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 20:23:13 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:13] "GET /dashboard.html HTTP/1.1" 304 -
+2026-09-03 20:23:13 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:13] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:23:13 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:13] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 20:23:13 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:13] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 20:23:15 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:23:15] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 20:25:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:25:39] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 20:25:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:25:39] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:25:39 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:25:39] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 20:25:42 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:25:42] "GET /dashboard.html HTTP/1.1" 304 -
+2026-09-03 20:25:42 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:25:42] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:25:42 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:25:42] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 20:25:42 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:25:42] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 20:25:42 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:25:42] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 20:32:11 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:32:11] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 20:32:12 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:32:12] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:32:12 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:32:12] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 20:32:17 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:32:17] "GET /dashboard.html HTTP/1.1" 304 -
+2026-09-03 20:32:17 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:32:17] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:32:17 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:32:17] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 20:32:17 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:32:17] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 20:32:17 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:32:17] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 20:33:15 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:33:15] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 20:33:15 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:33:15] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:33:15 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:33:15] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 20:33:26 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:33:26] "GET /dashboard.html HTTP/1.1" 304 -
+2026-09-03 20:33:26 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:33:26] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:33:26 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:33:26] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 20:33:26 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:33:26] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 20:33:26 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:33:26] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 20:35:00 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:00] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 20:35:00 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:00] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:35:00 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:00] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 20:35:15 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:15] "GET /dashboard.html HTTP/1.1" 304 -
+2026-09-03 20:35:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:16] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:35:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:16] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 20:35:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:16] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 20:35:16 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:16] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 20:35:25 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:25] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 20:35:25 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:25] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:35:25 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:25] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 20:35:45 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:45] "GET / HTTP/1.1" 304 -
+2026-09-03 20:35:47 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:47] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:35:47 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:47] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-03 20:35:47 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:47] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-03 20:35:47 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:47] "GET /statistics HTTP/1.1" 200 -
+2026-09-03 20:35:51 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:51] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 20:35:51 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:51] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-03 20:35:51 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:35:51] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:36:58 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:36:58] "GET /index.html HTTP/1.1" 304 -
+2026-09-03 20:36:58 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:36:58] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-03 20:36:58 | INFO     | werkzeug | 127.0.0.1 - - [03/Sep/2026 20:36:58] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-04 10:35:18 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-04 10:35:18 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-04 10:35:18 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-04 10:35:18 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.4:5000
+2026-09-04 10:35:18 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-04 10:35:18 | INFO     | werkzeug |  * Restarting with stat
+2026-09-04 10:35:30 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-04 10:35:30 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-04 10:35:30 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-04 10:35:30 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-04 10:35:30 | INFO     | werkzeug |  * Debugger PIN: 115-065-372
+2026-09-04 10:38:05 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:38:05] "GET / HTTP/1.1" 304 -
+2026-09-04 10:38:05 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:38:05] "GET / HTTP/1.1" 304 -
+2026-09-04 10:38:10 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:38:10] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-04 10:38:10 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:38:10] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-04 10:38:10 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:38:10] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-04 10:38:10 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:38:10] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-04 10:38:10 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:38:10] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-04 10:38:10 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:38:10] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-04 10:38:11 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:38:11] "GET /statistics HTTP/1.1" 200 -
+2026-09-04 10:38:11 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:38:11] "GET /statistics HTTP/1.1" 200 -
+2026-09-04 10:38:55 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:38:55] "GET / HTTP/1.1" 304 -
+2026-09-04 10:39:08 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:39:08] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-04 10:39:08 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:39:08] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-04 10:39:08 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:39:08] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-04 10:39:09 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:39:09] "GET /statistics HTTP/1.1" 200 -
+2026-09-04 10:39:13 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:39:13] "GET /index.html HTTP/1.1" 304 -
+2026-09-04 10:39:13 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:39:13] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-04 10:39:13 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:39:13] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-04 10:40:06 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-04 10:40:07 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | classes=['0']
+2026-09-04 10:40:35 | INFO     | database | Inserted detection report id=32 filename=5.jpeg
+2026-09-04 10:40:35 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:40:35] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 10:40:35 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:40:35] "GET /outputs/annotated_7112fc223f55.jpeg HTTP/1.1" 200 -
+2026-09-04 10:41:25 | INFO     | database | Inserted detection report id=33 filename=4.jpg
+2026-09-04 10:41:25 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:41:25] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 10:41:25 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:41:25] "GET /outputs/annotated_6d3942e1241d.jpg HTTP/1.1" 200 -
+2026-09-04 10:42:29 | INFO     | database | Inserted detection report id=34 filename=dcfb15b4cf37.jpg
+2026-09-04 10:42:29 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:42:29] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 10:42:29 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:42:29] "GET /outputs/annotated_14487afacbe5.jpg HTTP/1.1" 200 -
+2026-09-04 10:42:44 | INFO     | database | Inserted detection report id=35 filename=dcfb15b4cf37.jpg
+2026-09-04 10:42:44 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:42:44] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 10:42:44 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:42:44] "GET /outputs/annotated_e8e53f39cc2b.jpg HTTP/1.1" 200 -
+2026-09-04 10:49:40 | INFO     | database | Inserted detection report id=36 filename=7112fc223f55.jpeg
+2026-09-04 10:49:40 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:49:40] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 10:49:40 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:49:40] "GET /outputs/annotated_48de2b3390bf.jpeg HTTP/1.1" 200 -
+2026-09-04 10:50:09 | INFO     | database | Inserted detection report id=37 filename=6d3942e1241d.jpg
+2026-09-04 10:50:09 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:50:09] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 10:50:09 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:50:09] "GET /outputs/annotated_00a3d762472b.jpg HTTP/1.1" 200 -
+2026-09-04 10:50:42 | INFO     | database | Inserted detection report id=38 filename=1.jpg
+2026-09-04 10:50:42 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:50:42] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 10:50:42 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 10:50:42] "GET /outputs/annotated_16074d204ec3.jpg HTTP/1.1" 200 -
+2026-09-04 11:58:26 | INFO     | detector | Video detection: 1070 total frames (35.7s) -> processing 107 frames (every 10th), imgsz=320, half=False
+2026-09-04 12:01:45 | INFO     | detector | Video done: 107/1070 frames processed in 199.67s (10.0x speedup)
+2026-09-04 12:01:46 | INFO     | database | Inserted detection report id=39 filename=uhd_30fps.mp4
+2026-09-04 12:01:46 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:01:46] "POST /upload-video HTTP/1.1" 200 -
+2026-09-04 12:01:46 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:01:46] "GET /outputs/annotated_e516c9d41720.mp4 HTTP/1.1" 206 -
+2026-09-04 12:01:46 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:01:46] "GET /outputs/annotated_e516c9d41720.mp4 HTTP/1.1" 206 -
+2026-09-04 12:01:46 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:01:46] "GET /outputs/annotated_e516c9d41720.mp4 HTTP/1.1" 206 -
+2026-09-04 12:01:46 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:01:46] "GET /outputs/annotated_e516c9d41720.mp4 HTTP/1.1" 206 -
+2026-09-04 12:04:29 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:04:29] "GET /outputs/annotated_e516c9d41720.mp4 HTTP/1.1" 206 -
+2026-09-04 12:04:29 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:04:29] "GET /outputs/annotated_e516c9d41720.mp4 HTTP/1.1" 206 -
+2026-09-04 12:04:29 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:04:29] "GET /outputs/annotated_e516c9d41720.mp4 HTTP/1.1" 206 -
+2026-09-04 12:04:31 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:04:31] "GET /outputs/annotated_e516c9d41720.mp4 HTTP/1.1" 206 -
+2026-09-04 12:04:47 | INFO     | detector | Video detection: 1070 total frames (35.7s) -> processing 107 frames (every 10th), imgsz=320, half=False
+2026-09-04 12:05:42 | INFO     | detector | Video done: 107/1070 frames processed in 54.70s (10.0x speedup)
+2026-09-04 12:05:42 | INFO     | database | Inserted detection report id=40 filename=uhd_30fps.mp4
+2026-09-04 12:05:42 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:05:42] "POST /upload-video HTTP/1.1" 200 -
+2026-09-04 12:05:42 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:05:42] "GET /outputs/annotated_e03c8cd1671a.mp4 HTTP/1.1" 206 -
+2026-09-04 12:05:42 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:05:42] "GET /outputs/annotated_e03c8cd1671a.mp4 HTTP/1.1" 206 -
+2026-09-04 12:05:43 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:05:43] "GET /outputs/annotated_e03c8cd1671a.mp4 HTTP/1.1" 206 -
+2026-09-04 12:05:43 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:05:43] "GET /outputs/annotated_e03c8cd1671a.mp4 HTTP/1.1" 206 -
+2026-09-04 12:06:04 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:06:04] "GET /outputs/annotated_e03c8cd1671a.mp4 HTTP/1.1" 206 -
+2026-09-04 12:06:06 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:06:06] "GET /outputs/annotated_e03c8cd1671a.mp4 HTTP/1.1" 206 -
+2026-09-04 12:06:06 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:06:06] "GET /outputs/annotated_e03c8cd1671a.mp4 HTTP/1.1" 206 -
+2026-09-04 12:07:55 | INFO     | database | Inserted detection report id=41 filename=16074d204ec3.jpg
+2026-09-04 12:07:55 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:07:55] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 12:07:55 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:07:55] "GET /outputs/annotated_f7ddbcfb9368.jpg HTTP/1.1" 200 -
+2026-09-04 12:15:24 | INFO     | database | Inserted detection report id=42 filename=6.jpg
+2026-09-04 12:15:24 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:15:24] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 12:15:24 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:15:24] "GET /outputs/annotated_1542db27a67e.jpg HTTP/1.1" 200 -
+2026-09-04 12:15:35 | INFO     | database | Inserted detection report id=43 filename=6.jpg
+2026-09-04 12:15:35 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:15:35] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 12:15:35 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:15:35] "GET /outputs/annotated_ea2457d12c20.jpg HTTP/1.1" 200 -
+2026-09-04 12:18:43 | INFO     | database | Inserted detection report id=44 filename=8.jpg
+2026-09-04 12:18:43 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:18:43] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 12:18:43 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:18:43] "GET /outputs/annotated_cee061292b1a.jpg HTTP/1.1" 200 -
+2026-09-04 12:20:31 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:20:31] "GET /index.html HTTP/1.1" 304 -
+2026-09-04 12:20:31 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:20:31] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-04 12:20:31 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:20:31] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-04 12:20:41 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:20:41] "GET /index.html/ HTTP/1.1" 200 -
+2026-09-04 12:20:41 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-04 12:20:41 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:20:41] "GET /index.html/css/style.css HTTP/1.1" 404 -
+2026-09-04 12:20:41 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-04 12:20:41 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:20:41] "GET /index.html/js/app.js HTTP/1.1" 404 -
+2026-09-04 12:20:46 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-04 12:20:46 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:20:46] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-04 12:20:49 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:20:49] "GET /index.html HTTP/1.1" 304 -
+2026-09-04 12:20:49 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:20:49] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-04 12:20:49 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:20:49] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-04 12:21:03 | INFO     | database | Inserted detection report id=45 filename=9.jpg
+2026-09-04 12:21:03 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:21:03] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 12:21:03 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:21:03] "GET /outputs/annotated_eed4f8d3a86b.jpg HTTP/1.1" 200 -
+2026-09-04 12:21:10 | INFO     | database | Inserted detection report id=46 filename=9.jpg
+2026-09-04 12:21:10 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:21:10] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 12:21:10 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:21:10] "GET /outputs/annotated_1a3dfee29da3.jpg HTTP/1.1" 200 -
+2026-09-04 12:21:27 | INFO     | database | Inserted detection report id=47 filename=8.jpg
+2026-09-04 12:21:27 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:21:27] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 12:21:27 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:21:27] "GET /outputs/annotated_ef96421566df.jpg HTTP/1.1" 200 -
+2026-09-04 12:24:30 | INFO     | database | Inserted detection report id=48 filename=1.jpg
+2026-09-04 12:24:30 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:24:30] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 12:24:30 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:24:30] "GET /outputs/annotated_1334dc97df06.jpg HTTP/1.1" 200 -
+2026-09-04 12:24:42 | INFO     | database | Inserted detection report id=49 filename=8.jpg
+2026-09-04 12:24:42 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:24:42] "POST /upload-image HTTP/1.1" 200 -
+2026-09-04 12:24:42 | INFO     | werkzeug | 127.0.0.1 - - [04/Sep/2026 12:24:42] "GET /outputs/annotated_8a228d986acd.jpg HTTP/1.1" 200 -
+2026-09-07 11:57:21 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-07 11:57:22 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | raw classes=['0']
+2026-09-07 13:48:15 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-07 13:48:15 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-07 13:48:15 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-07 13:48:15 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.95.90:5000
+2026-09-07 13:48:15 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-07 13:48:15 | INFO     | werkzeug |  * Restarting with stat
+2026-09-07 13:48:18 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-07 13:48:18 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-07 13:48:18 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-07 13:48:18 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-07 13:48:18 | INFO     | werkzeug |  * Debugger PIN: 574-915-914
+2026-09-07 13:48:26 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:48:26] "GET / HTTP/1.1" 200 -
+2026-09-07 13:48:27 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:48:27] "GET /css/style.css HTTP/1.1" 200 -
+2026-09-07 13:48:27 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:48:27] "GET /css/dashboard.css HTTP/1.1" 200 -
+2026-09-07 13:48:27 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:48:27] "GET /js/dashboard.js HTTP/1.1" 200 -
+2026-09-07 13:48:28 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:48:28] "GET /statistics HTTP/1.1" 200 -
+2026-09-07 13:48:31 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-07 13:48:31 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:48:31] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-07 13:48:31 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:48:31] "GET /index.html HTTP/1.1" 200 -
+2026-09-07 13:48:32 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:48:32] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-07 13:48:32 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:48:32] "GET /js/app.js HTTP/1.1" 200 -
+2026-09-07 13:49:18 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-07 13:49:18 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | raw classes=['0']
+2026-09-07 13:49:26 | INFO     | database | Inserted detection report id=50 filename=8.jpg
+2026-09-07 13:49:26 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:49:26] "POST /upload-image HTTP/1.1" 200 -
+2026-09-07 13:49:27 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:49:27] "GET /outputs/annotated_a7e6d1f2a7a4.jpg HTTP/1.1" 200 -
+2026-09-07 13:53:40 | INFO     | database | Inserted detection report id=51 filename=6.jpg
+2026-09-07 13:53:40 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:53:40] "POST /upload-image HTTP/1.1" 200 -
+2026-09-07 13:53:41 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:53:41] "GET /outputs/annotated_242ebb02e037.jpg HTTP/1.1" 200 -
+2026-09-07 13:54:12 | INFO     | database | Inserted detection report id=52 filename=8.jpg
+2026-09-07 13:54:12 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:54:12] "POST /upload-image HTTP/1.1" 200 -
+2026-09-07 13:54:12 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:54:12] "GET /outputs/annotated_1dd867450db7.jpg HTTP/1.1" 200 -
+2026-09-07 13:56:00 | INFO     | database | Inserted detection report id=53 filename=1334dc97df06.jpg
+2026-09-07 13:56:00 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:56:00] "POST /upload-image HTTP/1.1" 200 -
+2026-09-07 13:56:01 | INFO     | werkzeug | 10.50.95.90 - - [07/Sep/2026 13:56:01] "GET /outputs/annotated_fdd4da28591a.jpg HTTP/1.1" 200 -
+2026-09-07 14:35:09 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-07 14:35:09 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-07 14:35:09 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-07 14:35:09 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.242.174.17:5000
+2026-09-07 14:35:09 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-07 14:35:09 | INFO     | werkzeug |  * Restarting with stat
+2026-09-07 14:35:13 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-07 14:35:13 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-07 14:35:13 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-07 14:35:13 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-07 14:35:13 | INFO     | werkzeug |  * Debugger PIN: 574-915-914
+2026-09-07 14:35:36 | INFO     | werkzeug | 127.0.0.1 - - [07/Sep/2026 14:35:36] "GET / HTTP/1.1" 200 -
+2026-09-07 14:35:36 | INFO     | werkzeug | 127.0.0.1 - - [07/Sep/2026 14:35:36] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-07 14:35:36 | INFO     | werkzeug | 127.0.0.1 - - [07/Sep/2026 14:35:36] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-07 14:35:36 | INFO     | werkzeug | 127.0.0.1 - - [07/Sep/2026 14:35:36] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-07 14:35:37 | INFO     | werkzeug | 127.0.0.1 - - [07/Sep/2026 14:35:37] "GET /statistics HTTP/1.1" 200 -
+2026-09-07 14:35:39 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-07 14:35:39 | INFO     | werkzeug | 127.0.0.1 - - [07/Sep/2026 14:35:39] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-07 14:35:40 | INFO     | werkzeug | 127.0.0.1 - - [07/Sep/2026 14:35:40] "GET /index.html HTTP/1.1" 304 -
+2026-09-07 14:35:40 | INFO     | werkzeug | 127.0.0.1 - - [07/Sep/2026 14:35:40] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-07 14:35:40 | INFO     | werkzeug | 127.0.0.1 - - [07/Sep/2026 14:35:40] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-07 14:35:57 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:35:57] "GET / HTTP/1.1" 200 -
+2026-09-07 14:35:58 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:35:58] "GET /css/style.css HTTP/1.1" 200 -
+2026-09-07 14:35:58 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:35:58] "GET /css/dashboard.css HTTP/1.1" 200 -
+2026-09-07 14:35:58 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:35:58] "GET /js/dashboard.js HTTP/1.1" 200 -
+2026-09-07 14:35:59 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:35:59] "GET /statistics HTTP/1.1" 200 -
+2026-09-07 14:36:01 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-07 14:36:01 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:01] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-07 14:36:02 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:02] "GET /index.html HTTP/1.1" 200 -
+2026-09-07 14:36:02 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:02] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-07 14:36:02 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:02] "GET /js/app.js HTTP/1.1" 200 -
+2026-09-07 14:36:05 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:05] "GET /dashboard.html HTTP/1.1" 200 -
+2026-09-07 14:36:05 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:05] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-07 14:36:06 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:06] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-07 14:36:06 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:06] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-07 14:36:06 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:06] "GET /statistics HTTP/1.1" 200 -
+2026-09-07 14:36:09 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:09] "GET /index.html HTTP/1.1" 304 -
+2026-09-07 14:36:09 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:09] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-07 14:36:09 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:09] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-07 14:36:36 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-07 14:36:36 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | raw classes=['0']
+2026-09-07 14:36:51 | INFO     | database | Inserted detection report id=54 filename=2.jpg
+2026-09-07 14:36:51 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:51] "POST /upload-image HTTP/1.1" 200 -
+2026-09-07 14:36:51 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:36:51] "GET /outputs/annotated_20726b941cbf.jpg HTTP/1.1" 200 -
+2026-09-07 14:39:48 | INFO     | database | Inserted detection report id=55 filename=5.jpg
+2026-09-07 14:39:48 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:39:48] "POST /upload-image HTTP/1.1" 200 -
+2026-09-07 14:39:49 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:39:49] "GET /outputs/annotated_7f9cd794f5eb.jpg HTTP/1.1" 200 -
+2026-09-07 14:41:02 | INFO     | database | Inserted detection report id=56 filename=images.jpg
+2026-09-07 14:41:02 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:41:02] "POST /upload-image HTTP/1.1" 200 -
+2026-09-07 14:41:02 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:41:02] "GET /outputs/annotated_9f2b44a4e716.jpg HTTP/1.1" 200 -
+2026-09-07 14:41:11 | INFO     | database | Inserted detection report id=57 filename=images.jpg
+2026-09-07 14:41:11 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:41:11] "POST /upload-image HTTP/1.1" 200 -
+2026-09-07 14:41:12 | INFO     | werkzeug | 10.242.174.17 - - [07/Sep/2026 14:41:12] "GET /outputs/annotated_de7ee74a093b.jpg HTTP/1.1" 200 -
+2026-09-07 23:28:07 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-07 23:28:07 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-07 23:28:07 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-07 23:28:07 | INFO     | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.242.224.17:5000
+2026-09-07 23:28:07 | INFO     | werkzeug | [33mPress CTRL+C to quit[0m
+2026-09-07 23:28:07 | INFO     | werkzeug |  * Restarting with stat
+2026-09-07 23:28:19 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-07 23:28:19 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-07 23:28:19 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-07 23:28:19 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-07 23:28:19 | INFO     | werkzeug |  * Debugger PIN: 499-753-098
+2026-09-07 23:31:45 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-07 23:31:45 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-07 23:31:45 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-07 23:31:45 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.242.224.17:5000
+2026-09-07 23:31:45 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-07 23:31:45 | INFO     | werkzeug |  * Restarting with stat
+2026-09-07 23:31:51 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-07 23:31:51 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-07 23:31:51 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-07 23:31:51 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-07 23:31:51 | INFO     | werkzeug |  * Debugger PIN: 574-915-914
+2026-09-07 23:33:01 | INFO     | werkzeug | 10.242.224.17 - - [07/Sep/2026 23:33:01] "GET / HTTP/1.1" 200 -
+2026-09-07 23:33:01 | INFO     | werkzeug | 10.242.224.17 - - [07/Sep/2026 23:33:01] "GET /css/style.css HTTP/1.1" 200 -
+2026-09-07 23:33:01 | INFO     | werkzeug | 10.242.224.17 - - [07/Sep/2026 23:33:01] "GET /css/dashboard.css HTTP/1.1" 200 -
+2026-09-07 23:33:01 | INFO     | werkzeug | 10.242.224.17 - - [07/Sep/2026 23:33:01] "GET /js/dashboard.js HTTP/1.1" 200 -
+2026-09-07 23:33:02 | INFO     | werkzeug | 10.242.224.17 - - [07/Sep/2026 23:33:02] "GET /statistics HTTP/1.1" 200 -
+2026-09-07 23:33:02 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-07 23:33:02 | INFO     | werkzeug | 10.242.224.17 - - [07/Sep/2026 23:33:02] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-07 23:33:06 | INFO     | werkzeug | 10.242.224.17 - - [07/Sep/2026 23:33:06] "GET /index.html HTTP/1.1" 200 -
+2026-09-07 23:33:06 | INFO     | werkzeug | 10.242.224.17 - - [07/Sep/2026 23:33:06] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-07 23:33:06 | INFO     | werkzeug | 10.242.224.17 - - [07/Sep/2026 23:33:06] "GET /js/app.js HTTP/1.1" 200 -
+2026-09-07 23:33:29 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-07 23:33:29 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | raw classes=['0']
+2026-09-07 23:33:40 | INFO     | database | Inserted detection report id=58 filename=1dd867450db7.jpg
+2026-09-07 23:33:40 | INFO     | werkzeug | 10.242.224.17 - - [07/Sep/2026 23:33:40] "POST /upload-image HTTP/1.1" 200 -
+2026-09-07 23:33:40 | INFO     | werkzeug | 10.242.224.17 - - [07/Sep/2026 23:33:40] "GET /outputs/annotated_0de287369a25.jpg HTTP/1.1" 200 -
+2026-09-08 10:37:43 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-08 10:37:43 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-08 10:37:43 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-08 10:37:43 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.95.90:5000
+2026-09-08 10:37:43 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-08 10:37:43 | INFO     | werkzeug |  * Restarting with stat
+2026-09-08 10:37:48 | INFO     | torch._subclasses.fake_tensor | FakeTensor cache stats:
+2026-09-08 10:37:48 | INFO     | torch._subclasses.fake_tensor |   cache_hits: 0
+2026-09-08 10:37:48 | INFO     | torch._subclasses.fake_tensor |   cache_misses: 0
+2026-09-08 10:45:08 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-08 10:45:08 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-08 10:45:08 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-08 10:45:08 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.95.90:5000
+2026-09-08 10:45:08 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-08 10:45:08 | INFO     | werkzeug |  * Restarting with stat
+2026-09-08 10:45:14 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-08 10:45:14 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-08 10:45:14 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-08 10:45:14 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-08 10:45:14 | INFO     | werkzeug |  * Debugger PIN: 574-915-914
+2026-09-08 10:45:32 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:45:32] "GET / HTTP/1.1" 304 -
+2026-09-08 10:45:34 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:45:34] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-08 10:45:34 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:45:34] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-08 10:45:34 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:45:34] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-08 10:45:35 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:45:35] "GET /statistics HTTP/1.1" 200 -
+2026-09-08 10:45:38 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:45:38] "GET /index.html HTTP/1.1" 304 -
+2026-09-08 10:45:38 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:45:38] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-08 10:45:38 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:45:38] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-08 10:45:53 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-08 10:45:53 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | raw classes=['0']
+2026-09-08 10:46:15 | INFO     | database | Inserted detection report id=59 filename=1dd867450db7.jpg
+2026-09-08 10:46:15 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:46:15] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 10:46:15 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:46:15] "GET /outputs/annotated_8ae420f90c0c.jpg HTTP/1.1" 200 -
+2026-09-08 10:48:32 | INFO     | database | Inserted detection report id=60 filename=2.jpg
+2026-09-08 10:48:32 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:48:32] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 10:48:32 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:48:32] "GET /outputs/annotated_37a936a9c9a3.jpg HTTP/1.1" 200 -
+2026-09-08 10:53:05 | INFO     | database | Inserted detection report id=61 filename=5.jpg
+2026-09-08 10:53:05 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:53:05] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 10:53:05 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:53:05] "GET /outputs/annotated_33cdfc281666.jpg HTTP/1.1" 200 -
+2026-09-08 10:53:12 | INFO     | database | Inserted detection report id=62 filename=5.jpg
+2026-09-08 10:53:12 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:53:12] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 10:53:12 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:53:12] "GET /outputs/annotated_72afdbd3050d.jpg HTTP/1.1" 200 -
+2026-09-08 10:53:30 | INFO     | database | Inserted detection report id=63 filename=0de287369a25.jpg
+2026-09-08 10:53:30 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:53:30] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 10:53:31 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 10:53:31] "GET /outputs/annotated_7a74f525bca0.jpg HTTP/1.1" 200 -
+2026-09-08 11:06:24 | INFO     | database | Inserted detection report id=64 filename=5.jpg
+2026-09-08 11:06:24 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:06:24] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 11:06:24 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:06:24] "GET /outputs/annotated_c757daf23f04.jpg HTTP/1.1" 200 -
+2026-09-08 11:06:43 | INFO     | database | Inserted detection report id=65 filename=0de287369a25.jpg
+2026-09-08 11:06:43 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:06:43] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 11:06:43 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:06:43] "GET /outputs/annotated_8853a8c16176.jpg HTTP/1.1" 200 -
+2026-09-08 11:08:33 | INFO     | database | Inserted detection report id=66 filename=4.jpg
+2026-09-08 11:08:33 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:08:33] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 11:08:33 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:08:33] "GET /outputs/annotated_17c22709009d.jpg HTTP/1.1" 200 -
+2026-09-08 11:08:49 | INFO     | database | Inserted detection report id=67 filename=1.jpg
+2026-09-08 11:08:49 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:08:49] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 11:08:49 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:08:49] "GET /outputs/annotated_64eca3a44ae3.jpg HTTP/1.1" 200 -
+2026-09-08 11:10:14 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:10:14] "GET /dashboard.html HTTP/1.1" 304 -
+2026-09-08 11:10:14 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:10:14] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-08 11:10:14 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:10:14] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-08 11:10:14 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:10:14] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-08 11:10:26 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:10:26] "GET /statistics HTTP/1.1" 200 -
+2026-09-08 11:10:59 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:10:59] "GET /history.html HTTP/1.1" 304 -
+2026-09-08 11:10:59 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:10:59] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-08 11:10:59 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:10:59] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-08 11:10:59 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:10:59] "GET /js/history.js HTTP/1.1" 304 -
+2026-09-08 11:10:59 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:10:59] "GET /history HTTP/1.1" 200 -
+2026-09-08 11:11:08 | INFO     | utils | Generated CSV report: C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\reports\detection_report_dec4efe6.csv
+2026-09-08 11:11:08 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:11:08] "GET /download-report HTTP/1.1" 200 -
+2026-09-08 11:11:12 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:11:12] "GET /dashboard.html HTTP/1.1" 304 -
+2026-09-08 11:11:12 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:11:12] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-08 11:11:12 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:11:12] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-08 11:11:12 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:11:12] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-08 11:11:18 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:11:18] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-08 11:11:18 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:11:18] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-08 11:11:20 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:11:20] "GET /index.html HTTP/1.1" 304 -
+2026-09-08 11:11:20 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:11:20] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-08 11:11:20 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:11:20] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-08 11:12:51 | INFO     | database | Inserted detection report id=68 filename=9.jpg
+2026-09-08 11:12:51 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:12:51] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 11:12:51 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:12:51] "GET /outputs/annotated_7837bd5dcb7d.jpg HTTP/1.1" 200 -
+2026-09-08 11:29:11 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-08 11:29:11 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-08 11:29:11 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-08 11:29:11 | INFO     | werkzeug | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.50.95.90:5000
+2026-09-08 11:29:11 | INFO     | werkzeug | Press CTRL+C to quit
+2026-09-08 11:29:11 | INFO     | werkzeug |  * Restarting with stat
+2026-09-08 11:29:16 | INFO     | database | Database initialized at C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\database\road_damage.db
+2026-09-08 11:29:16 | INFO     | __main__ | Flask application created and configured successfully.
+2026-09-08 11:29:16 | INFO     | __main__ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+2026-09-08 11:29:16 | WARNING  | werkzeug |  * Debugger is active!
+2026-09-08 11:29:16 | INFO     | werkzeug |  * Debugger PIN: 574-915-914
+2026-09-08 11:29:32 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:29:32] "GET / HTTP/1.1" 304 -
+2026-09-08 11:29:34 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:29:34] "GET /js/dashboard.js HTTP/1.1" 304 -
+2026-09-08 11:29:34 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:29:34] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-08 11:29:34 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:29:34] "GET /css/dashboard.css HTTP/1.1" 304 -
+2026-09-08 11:29:34 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 11:29:34] "GET /statistics HTTP/1.1" 200 -
+2026-09-08 11:29:41 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:29:41] "GET / HTTP/1.1" 200 -
+2026-09-08 11:29:41 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:29:41] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-08 11:29:41 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:29:41] "GET /css/dashboard.css HTTP/1.1" 200 -
+2026-09-08 11:29:41 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:29:41] "GET /js/dashboard.js HTTP/1.1" 200 -
+2026-09-08 11:29:42 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:29:42] "GET /statistics HTTP/1.1" 200 -
+2026-09-08 11:29:45 | ERROR    | utils | API error response: The requested resource was not found. (status=404)
+2026-09-08 11:29:45 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:29:45] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-08 11:29:46 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:29:46] "GET /index.html HTTP/1.1" 200 -
+2026-09-08 11:29:46 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:29:46] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-08 11:29:46 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:29:46] "GET /js/app.js HTTP/1.1" 200 -
+2026-09-08 11:30:07 | INFO     | detector | Custom model found and validated. Loading best.pt
+2026-09-08 11:30:07 | INFO     | detector | YOLO model loaded from C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026\backend\models\best.pt | raw classes=['0']
+2026-09-08 11:30:18 | INFO     | database | Inserted detection report id=69 filename=7837bd5dcb7d.jpg
+2026-09-08 11:30:18 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:30:18] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 11:30:19 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:30:19] "GET /outputs/annotated_c959d65d67e4.jpg HTTP/1.1" 200 -
+2026-09-08 11:32:20 | INFO     | database | Inserted detection report id=70 filename=1.jpg
+2026-09-08 11:32:20 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:32:20] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 11:32:21 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:32:21] "GET /outputs/annotated_70bf719c28c4.jpg HTTP/1.1" 200 -
+2026-09-08 11:34:40 | INFO     | database | Inserted detection report id=71 filename=6.jpg
+2026-09-08 11:34:40 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:34:40] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 11:34:40 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:34:40] "GET /outputs/annotated_af48e5f7c2c7.jpg HTTP/1.1" 200 -
+2026-09-08 11:35:00 | INFO     | werkzeug | 10.50.95.90 - - [08/Sep/2026 11:35:00] "GET /outputs/annotated_af48e5f7c2c7.jpg HTTP/1.1" 200 -
+2026-09-08 13:06:53 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 13:06:53] "GET /index.html HTTP/1.1" 304 -
+2026-09-08 13:06:53 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 13:06:53] "GET /css/style.css HTTP/1.1" 304 -
+2026-09-08 13:06:53 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 13:06:53] "GET /js/app.js HTTP/1.1" 304 -
+2026-09-08 14:17:32 | INFO     | database | Inserted detection report id=72 filename=9.jpg
+2026-09-08 14:17:32 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 14:17:32] "POST /upload-image HTTP/1.1" 200 -
+2026-09-08 14:17:32 | INFO     | werkzeug | 127.0.0.1 - - [08/Sep/2026 14:17:32] "GET /outputs/annotated_3d125f8fd4ed.jpg HTTP/1.1" 200 -
