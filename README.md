@@ -538,3 +538,9 @@ For deployment, make sure to:
 ---
 
 Would you like me to save this as a file (README.md or a Word document) that you can include in your project?
+
+This project is intended for educational and demonstration purposes.
+
+Author: Teki Akhil Venkat
+B.Tech – Computer Science / AIML
+GitHub: https://github.com/akhilvenkat667/Road-Damage-AI-System-2026
