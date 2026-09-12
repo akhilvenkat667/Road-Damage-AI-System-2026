@@ -1,429 +1,540 @@
-# AI Road Damage Detection System Using Python, YOLOv8, Flask, OpenCV and SQLite
 
-A complete, production-structured web application that detects road damage — potholes, cracks, and other
-surface defects — in images and videos using a YOLOv8 object detection model, with a Flask REST API backend,
-a SQLite detection history database, and a modern, responsive vanilla HTML/CSS/JS frontend.
+# 🛣 Road Damage AI System
 
----
+Road Damage AI System is a Flask-based web application that detects and tracks road surface damage (potholes, cracks, etc.) in images and videos using YOLOv8.
 
-## Table of contents
+It provides:
 
-1. [Project description](#project-description)
-2. [Features](#features)
-3. [Objectives](#objectives)
-4. [Technology stack](#technology-stack)
-5. [Software architecture](#software-architecture)
-6. [Folder structure](#folder-structure)
-7. [Supported operating systems & Python version](#supported-operating-systems--python-version)
-8. [Installation](#installation)
-9. [Placing the YOLO model](#placing-the-yolo-model)
-10. [Running the backend](#running-the-backend)
-11. [Running the frontend](#running-the-frontend)
-12. [One-click Windows launch](#one-click-windows-launch)
-13. [API documentation](#api-documentation)
-14. [Database schema](#database-schema)
-15. [Screenshots](#screenshots)
-16. [Troubleshooting guide](#troubleshooting-guide)
-17. [Frequently asked questions](#frequently-asked-questions)
-18. [Future improvements](#future-improvements)
-19. [Deployment suggestions](#deployment-suggestions)
-20. [License](#license)
+- 📸 Image Damage Detection
+- 🎥 Video Damage Tracking
+- 📊 Dashboard Statistics
+- 📁 Detection History
+- 📈 CSV Report Export
+- 💻 Simple Web Interface
 
 ---
 
-## Project description
+# 📚 Complete Beginner Guide To Run This Project
 
-Road authorities and civil engineers spend significant time manually surveying roads for damage. This system
-automates that process: upload a photo or video captured during a road inspection, and the app runs it
-through a YOLOv8 object detection model to locate and classify damage, draws bounding boxes around each
-detection, records the results in a database, and presents an interactive dashboard of findings over time.
+This guide assumes you have **zero prior knowledge**.
 
-## Features
+Follow every step carefully.
 
-- Upload road images (JPG/JPEG/PNG) or videos (MP4/AVI/MOV) via drag-and-drop or file browser
-- Real-time YOLOv8 inference with bounding boxes, class labels, and confidence scores
-- Annotated output images/videos saved to disk and viewable/downloadable in the browser
-- Full detection history stored in SQLite, searchable by filename or damage type
-- Interactive dashboard with total uploads, damage counts, average confidence, and Chart.js visualizations
-- Downloadable CSV detection reports (generated with Pandas)
-- Delete individual history records
-- Automatic fallback from a custom-trained model (`best.pt`) to the stock YOLOv8n model
-- Modern glassmorphism UI, dark theme, responsive layout, drag-and-drop, progress bars, toasts
-- Centralized configuration, structured logging, and consistent JSON error handling throughout the API
+---
 
-## Objectives
+# 🖥 STEP 1 — Install Required Software
 
-- Provide an end-to-end, runnable reference implementation of a computer-vision web application
-- Demonstrate clean separation of concerns between model inference, data access, API routing, and UI
-- Be approachable for beginners while following production-grade engineering practices
+You must install 3 things:
 
-## Technology stack
+---
 
-| Layer        | Technology                                                             |
-|--------------|-------------------------------------------------------------------------|
-| Detection    | YOLOv8 (Ultralytics), OpenCV                                            |
-| Backend      | Python 3.10+, Flask, Flask-CORS, Pandas, NumPy, Pillow, SQLite3          |
-| Frontend     | HTML5, CSS3, vanilla JavaScript (ES6+), Chart.js (via CDN)               |
-| Database     | SQLite (`road_damage.db`)                                                |
-| Tooling      | pathlib, uuid, logging, werkzeug                                         |
+## 1️⃣ Install Python 3.11 (NOT 3.14)
 
-No React, Angular, Vue, Bootstrap, Node.js, or Django are used anywhere in this project.
+This project requires Python 3.10 or 3.11.
 
-## Software architecture
+> ⚠️ Do NOT install Python 3.14 — it is too new and causes compatibility errors with ultralytics/YOLOv8.
 
-```
-                +-------------------+
-                |   Frontend (JS)   |
-                |  index / dashboard|
-                |  / history .html  |
-                +---------+---------+
-                          | fetch() / XHR (JSON, multipart)
-                          v
-                +-------------------+
-                |   Flask app.py    |
-                |  (routes.py API)  |
-                +----+---------+----+
-                     |         |
-        +------------+         +-------------+
-        v                                    v
- +--------------+                    +----------------+
- |  detector.py |                    |   database.py  |
- |  (YOLOv8 +   |                    |  (SQLite CRUD) |
- |   OpenCV)    |                    +--------+-------+
- +------+-------+                             |
-        |                                     v
-        v                          backend/database/road_damage.db
- backend/models/best.pt
- (fallback: yolov8n.pt)
+### Download Python:
+
+Go to:
+[https://www.python.org/downloads/release/python-3119/](https://www.python.org/downloads/release/python-3119/)
+
+Download:
+**Windows installer (64-bit)**
+
+### Install Python:
+
+- Run the installer
+- ✅ **Check "Add Python to PATH"** (very important!)
+- Click "Install Now"
+
+### Verify Installation
+
+Open Command Prompt and type:
+
+```bash
+python --version
 ```
 
-- **config.py** centralizes every path and constant.
-- **logger.py** provides one shared, rotating-file logger used everywhere.
-- **detector.py** loads the YOLO model once (singleton) and exposes `detect_image` / `detect_video`.
-- **database.py** owns all SQLite access (init, insert, query, delete, statistics).
-- **utils.py** holds small helpers: validation, unique filenames, JSON response helpers, CSV export.
-- **routes.py** defines the Flask Blueprint with every REST endpoint.
-- **app.py** is the application factory that wires everything together and starts the server.
-
-## Folder structure
+If installed correctly, you will see:
 
 ```
-Road-Damage-AI-System/
+Python 3.11.x
+```
+
+If you see an error → Python is not installed correctly or not added to PATH.
+
+---
+
+## 2️⃣ Install Git (Optional but Recommended)
+
+Download:
+[https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+Install normally.
+
+Verify:
+
+```bash
+git --version
+```
+
+---
+
+## 3️⃣ Install VS Code (Recommended Editor)
+
+Download:
+[https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+Install normally and open your project folder in it.
+
+---
+
+# 📥 STEP 2 — Download The Project
+
+You have 2 methods.
+
+---
+
+### Method 1 — Download ZIP (Easiest)
+
+Go to GitHub project page:
+[https://github.com/akhilvenkat667/Road-Damage-AI-System-2026](https://github.com/akhilvenkat667/Road-Damage-AI-System-2026)
+
+- Click green **"Code"** button
+- Click **"Download ZIP"**
+- Extract ZIP file
+- Open extracted folder
+
+### Method 2 — Clone Using Git
+
+Open Command Prompt:
+
+```bash
+git clone https://github.com/akhilvenkat667/Road-Damage-AI-System-2026.git
+```
+
+Then enter folder:
+
+```bash
+cd Road-Damage-AI-System-2026
+```
+
+---
+
+# 📂 STEP 3 — Project Structure
+
+```
+Road-Damage-AI-System-2026/
+│
 ├── backend/
-│   ├── app.py
-│   ├── detector.py
-│   ├── database.py
-│   ├── config.py
-│   ├── routes.py
-│   ├── utils.py
-│   ├── logger.py
-│   ├── requirements.txt
+│   ├── app.py              ← Main Flask application entry point
+│   ├── config.py           ← Configuration (paths, thresholds, ports)
+│   ├── detector.py         ← YOLOv8 model wrapper (detection + tracking)
+│   ├── routes.py           ← API endpoints (/upload-image, /upload-video, etc.)
+│   ├── database.py         ← SQLite database operations
+│   ├── utils.py            ← Helper functions (file handling, CSV export)
+│   ├── logger.py           ← Logging configuration
+│   ├── requirements.txt    ← Python dependencies list
+│   │
 │   ├── models/
-│   │   ├── best.pt            <- place your custom-trained model here (optional)
-│   │   └── yolov8n.pt         <- fallback pretrained model (optional, auto-downloads if absent)
-│   ├── database/
-│   │   └── road_damage.db     <- created automatically on first run
-│   ├── uploads/                <- raw uploaded files land here
-│   ├── outputs/                <- annotated results land here
-│   ├── reports/                <- generated CSV reports land here
-│   └── logs/                   <- app.log (rotating) lands here
+│   │   └── best.pt         ← YOLOv8 trained road-damage model
+│   │
+│   ├── database/           ← SQLite DB file (auto-created)
+│   ├── uploads/            ← Uploaded files (auto-created)
+│   ├── outputs/            ← Annotated results (auto-created)
+│   ├── reports/            ← CSV reports (auto-created)
+│   └── logs/               ← Application logs (auto-created)
+│
 ├── frontend/
-│   ├── index.html
-│   ├── dashboard.html
-│   ├── history.html
+│   ├── index.html          ← Upload / scan page
+│   ├── dashboard.html      ← Statistics dashboard
+│   ├── history.html        ← Detection history page
 │   ├── css/
-│   │   ├── style.css
-│   │   └── dashboard.css
-│   ├── js/
-│   │   ├── app.js
-│   │   ├── dashboard.js
-│   │   └── history.js
-│   └── assets/
-│       ├── images/
-│       └── icons/
-├── sample_data/
-│   ├── images/
-│   └── videos/
-├── README.md
-└── run_project.bat
+│   │   └── style.css       ← Global styling
+│   └── js/
+│       ├── app.js          ← Upload page logic
+│       ├── dashboard.js    ← Dashboard logic
+│       └── history.js      ← History page logic
+│
+├── requirements.txt        ← Python dependencies (fallback copy)
+└── README.md               ← Project overview
 ```
 
-## Supported operating systems & Python version
+---
 
-- **OS:** Windows 10/11, macOS 12+, Ubuntu 20.04+/Debian-based Linux
-- **Python:** 3.10 or 3.11 recommended (Ultralytics also supports 3.9–3.12)
+# 🔧 STEP 4 — Create Virtual Environment & Install Dependencies
 
-## Installation
+### Open Command Prompt / PowerShell in the project root folder:
 
-### 1. Clone or copy the project
+```bash
+cd "C:\Users\akhil\OneDrive\Desktop\my project\Road-Damage-AI-System-2026"
+```
 
-Copy the entire `Road-Damage-AI-System` folder to your machine.
+### Create a virtual environment:
 
-### 2. Create a virtual environment
+```bash
+python -m venv venv
+```
+
+### Activate the virtual environment:
 
 **Windows (PowerShell):**
 ```powershell
-cd Road-Damage-AI-System
-python -m venv venv
-venv\Scripts\Activate.ps1
+venv\Scripts\activate
 ```
 
-**macOS / Linux:**
+**Windows (Command Prompt):**
+```cmd
+venv\Scripts\activate.bat
+```
+
+You should see `(venv)` appear at the start of your prompt:
+
+```
+(venv) C:\Users\akhil\...>
+```
+
+### Install all required packages:
+
 ```bash
-cd Road-Damage-AI-System
-python3 -m venv venv
-source venv/bin/activate
+pip install -r requirements.txt
 ```
 
-### 3. Install dependencies
+If `requirements.txt` is missing or you get errors, install manually:
 
 ```bash
-pip install --upgrade pip
-pip install -r backend/requirements.txt
+pip install ultralytics flask pandas opencv-python pillow
 ```
 
-> First install may take several minutes since Ultralytics and OpenCV are large packages.
+> ⚠️ This will download YOLOv8, Flask, OpenCV and other libraries. It may take a few minutes.
 
-## Placing the YOLO model
+---
 
-- Put a custom-trained road-damage model at `backend/models/best.pt` for best accuracy. This is used
-  automatically if present.
-- Otherwise, place the general-purpose `yolov8n.pt` at `backend/models/yolov8n.pt`. If neither file
-  exists, Ultralytics will attempt to auto-download `yolov8n.pt` the first time detection runs (requires
-  internet access). Note that the stock `yolov8n.pt` is trained on the COCO dataset and will **not**
-  recognize potholes/cracks by name — for real road-damage classification, train or source a model on a
-  pothole/crack dataset (e.g. RDD2022 / RDD2020) and save it as `best.pt`.
+# 🧠 STEP 5 — Verify The Model File
 
-## Running the backend
+The road-damage detection model must be at:
+
+```
+backend\models\best.pt
+```
+
+### What the model detects:
+
+| Class ID | Damage Type |
+|----------|-------------------------------|
+| 0 | Longitudinal Crack |
+| 1 | Transverse Crack |
+| 2 | Alligator Crack |
+| 3 | Pothole |
+| 4 | Other (Road Damage) |
+
+> ⚠️ If `best.pt` is missing or too small (< 1 MB), the system will fall back to `yolov8n.pt` which detects **vehicles** (cars, motorcycles, people) — NOT road damage. Make sure the correct road-damage model is in place.
+
+### To verify the model:
+
+Check the file size — it should be **approximately 67 MB**. If it is only a few KB or MB, it is the wrong file.
+
+---
+
+# ▶ STEP 6 — Run The Application
+
+### Make sure your virtual environment is activated:
+
+```powershell
+venv\Scripts\activate
+```
+
+### Navigate to backend folder:
 
 ```bash
 cd backend
+```
+
+### Start the Flask server:
+
+```bash
 python app.py
 ```
 
-The server starts at `http://127.0.0.1:5000/`. On first run it automatically creates the `database/`,
-`uploads/`, `outputs/`, `reports/`, and `logs/` folders and initializes `road_damage.db`.
-
-## Running the frontend
-
-The Flask backend serves the frontend directly — no separate server is needed. Once `python app.py` is
-running, simply open:
+### Wait for this output in the terminal:
 
 ```
-http://127.0.0.1:5000/
+2026-09-10 20:41:44 | INFO | database | Database initialized successfully.
+2026-09-10 20:41:44 | INFO | main___ | Flask application created and configured successfully.
+2026-09-10 20:41:44 | INFO | detector | Custom model found and validated. Loading best.pt
+2026-09-10 20:41:44 | INFO | detector | YOLO model loaded successfully | classes=['Longitudinal Crack', 'Transverse Crack', 'Alligator Crack', 'Pothole', 'Other']
+2026-09-10 20:41:44 | INFO | main___ | Starting AI Road Damage Detection System on http://0.0.0.0:5000
+* Running on http://127.0.0.1:5000
 ```
 
-in your browser. This loads `frontend/index.html`; the navbar links to the dashboard and history pages.
+If you see the classes as `['person', 'bicycle', 'car', ...]` → the wrong model is loaded. Replace `best.pt`.
 
-## One-click Windows launch
+---
 
-Double-click `run_project.bat` (or run it from PowerShell/CMD). It will:
+# 🌐 STEP 7 — Open The Website
 
-1. Create a virtual environment if one doesn't exist
-2. Activate it
-3. Install/update dependencies from `backend/requirements.txt`
-4. Launch the Flask backend in its own window
-5. Open the app in your default browser
+Open your browser and go to:
 
-## API documentation
+[http://127.0.0.1:5000](http://127.0.0.1:5000)
 
-Base URL: `http://127.0.0.1:5000`
+or
 
-### `GET /`
-Serves the frontend's `index.html`.
+[http://localhost:5000](http://localhost:5000)
 
-### `POST /upload-image`
-Upload a single image and run detection.
+You will see the Road Damage AI interface with:
 
-**Request:** `multipart/form-data`, field name `file` (jpg/jpeg/png)
+- **Detect** — Upload image/video for damage detection
+- **Dashboard** — View detection statistics
+- **History** — Browse past detection results
 
-**Response `200`:**
+---
+
+# 📸 How To Use
+
+### Detect Road Damage:
+
+1. Click **"Detect"** in the navbar
+2. Choose **Image** or **Video** mode
+3. Drag & drop a road photo/video (or click "Browse files")
+4. Click **"Run detection"**
+5. Wait for processing
+6. View the annotated result with:
+   - Bounding boxes around road damage
+   - Damage class labels (Pothole, Crack, etc.)
+   - Confidence scores
+   - Tracking IDs (for videos)
+7. Click **"Download annotated file"** to save the result
+
+### Supported File Types:
+
+| Type | Formats | Max Size |
+|------|---------------------|----------|
+| Images | JPG, JPEG, PNG | 200 MB |
+| Videos | MP4, AVI, MOV | 200 MB |
+
+---
+
+# 🔌 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|------------------------|-----------------------------------|
+| GET | `/` | Serve the detect page |
+| POST | `/upload-image` | Upload & detect image |
+| POST | `/upload-video` | Upload & detect video |
+| GET | `/history` | Get all detection history |
+| DELETE | `/history/<id>` | Delete a detection record |
+| GET | `/statistics` | Get dashboard statistics |
+| GET | `/download-report` | Download CSV report |
+
+### API Testing (Optional)
+
+You can test the API using Postman or Thunder Client:
+
+**POST** [http://127.0.0.1:5000/upload-image](http://127.0.0.1:5000/upload-image)
+
+- Body type: `form-data`
+- Key: `file`
+- Value: select an image file
+
+Response:
+
 ```json
 {
   "success": true,
   "message": "Image processed successfully.",
   "data": {
-    "id": 14,
-    "filename": "road_survey_01.jpg",
-    "damage_types": ["pothole", "crack"],
+    "id": 1,
+    "filename": "road_photo.jpg",
+    "damage_types": ["Pothole", "Longitudinal Crack"],
     "detection_count": 3,
-    "average_confidence": 0.812,
-    "processing_time": 0.734,
-    "output_url": "/outputs/annotated_3f2a1c9e4b7a.jpg"
+    "average_confidence": 0.82,
+    "processing_time": 1.245,
+    "output_url": "/outputs/annotated_road_photo.jpg"
   }
 }
 ```
 
-### `POST /upload-video`
-Upload a single video and run frame-by-frame detection.
+---
 
-**Request:** `multipart/form-data`, field name `file` (mp4/avi/mov)
+# 🛑 To Stop The Application
 
-**Response `200`:** same shape as `/upload-image`, with `output_url` pointing to an annotated `.mp4`.
+In Command Prompt / PowerShell press:
 
-### `GET /history?search=<term>`
-Returns detection history, optionally filtered by filename/damage type.
-
-**Response `200`:**
-```json
-{
-  "success": true,
-  "message": "Success",
-  "data": {
-    "count": 2,
-    "reports": [
-      {
-        "id": 14,
-        "filename": "road_survey_01.jpg",
-        "file_type": "image",
-        "damage_type": "pothole,crack",
-        "confidence": 0.812,
-        "processing_time": 0.734,
-        "created_at": "2026-08-01T10:22:05",
-        "output_path": "backend/outputs/annotated_3f2a1c9e4b7a.jpg"
-      }
-    ]
-  }
-}
+```
+CTRL + C
 ```
 
-### `DELETE /history/<id>`
-Deletes a single detection record.
+---
 
-**Response `200`:** `{ "success": true, "message": "Report deleted successfully.", "data": { "id": 14 } }`
-**Response `404`:** returned if the id does not exist.
+# ⚙ Technologies Used
 
-### `GET /statistics`
-Returns dashboard aggregate statistics (`total_uploads`, `image_count`, `video_count`, `damage_count`,
-`average_confidence`, `latest_detections`, `damage_distribution`).
+| Technology | Purpose |
+|----------------------|--------------------------------------|
+| Python 3.11 | Backend programming language |
+| Flask | Web framework |
+| YOLOv8 (Ultralytics) | AI object detection model |
+| OpenCV | Image/video processing |
+| SQLite | Database for detection history |
+| Pandas | CSV report generation |
+| HTML / CSS / JS | Frontend interface |
+| ByteTrack | Video tracking algorithm |
 
-### `GET /download-report`
-Generates and streams a CSV file of the full detection history as a downloadable attachment.
+---
 
-All endpoints return the standardized envelope `{ "success": bool, "message": str, "data": any }` and use
-proper HTTP status codes (`400` validation errors, `404` not found, `413` file too large, `500` server
-errors).
+# 📊 Configuration Values
 
-## Database schema
+All settings are in `backend/config.py`:
 
-Table `damage_reports` inside `backend/database/road_damage.db`:
+| Setting | Value | Description |
+|-------------------------|------------------|--------------------------------------|
+| `FLASK_PORT` | 5000 | Web server port |
+| `FLASK_HOST` | 0.0.0.0 | Accessible from all interfaces |
+| `FLASK_DEBUG` | False | Debug mode off (security) |
+| `CONFIDENCE_THRESHOLD` | 0.25 | Minimum detection confidence |
+| `IOU_THRESHOLD` | 0.45 | Non-max suppression threshold |
+| `MAX_CONTENT_LENGTH` | 200 MB | Max upload file size |
+| `TRACKER_CONFIG` | bytetrack.yaml | Video tracking algorithm |
+| `MODEL_MIN_SIZE_BYTES` | 1 MB | Min valid model file size |
 
-| Column           | Type    | Description                                      |
-|------------------|---------|---------------------------------------------------|
-| id               | INTEGER | Primary key, auto-increment                        |
-| filename         | TEXT    | Original uploaded filename                          |
-| file_type        | TEXT    | `"image"` or `"video"`                             |
-| damage_type      | TEXT    | Comma-separated detected damage classes            |
-| confidence       | REAL    | Average confidence score across detections          |
-| processing_time  | REAL    | Seconds taken to process the file                   |
-| created_at       | TEXT    | ISO-8601 timestamp                                  |
-| output_path      | TEXT    | Path to the saved annotated output file             |
+---
 
-## Screenshots
+# ❓ Common Problems & Solutions
 
-> _Add screenshots of the upload page, dashboard, and history page here, e.g._
-> `![Upload page](frontend/assets/images/screenshot-upload.png)`
-> `![Dashboard](frontend/assets/images/screenshot-dashboard.png)`
-> `![History](frontend/assets/images/screenshot-history.png)`
+### Problem: `python` command not recognized
 
-## Troubleshooting guide
+**Solution:**
+Python is not added to PATH.
 
-**`ModuleNotFoundError: No module named 'flask'` (or ultralytics/cv2/etc.)**
-Your virtual environment isn't activated, or dependencies weren't installed. Run
-`venv\Scripts\activate` (Windows) or `source venv/bin/activate` (macOS/Linux), then
-`pip install -r backend/requirements.txt`.
+- Reinstall Python 3.11
+- ✅ Check **"Add Python to PATH"** during installation
+- Restart Command Prompt
 
-**`python` / `python3` not recognized**
-Python isn't installed or isn't on your PATH. Install Python 3.10+ from python.org and make sure
-"Add Python to PATH" is checked during Windows installation.
+---
 
-**Virtual environment activation blocked on Windows (PowerShell)**
-Run PowerShell as Administrator and execute:
-`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`, then retry activation.
+### Problem: `ModuleNotFoundError: No module named 'ultralytics'`
 
-**`ultralytics` install fails / takes forever**
-Ensure you have a stable internet connection and at least ~2GB free disk space. On low-resource
-machines, install a CPU-only PyTorch wheel first: `pip install torch --index-url
-https://download.pytorch.org/whl/cpu`, then re-run `pip install -r backend/requirements.txt`.
+**Solution:**
+Dependencies not installed.
 
-**`cv2.error` when processing a video**
-The video codec may be unsupported. Convert the file to standard H.264 MP4, or try a different sample
-video from `sample_data/videos/`.
+Make sure your virtual environment is activated, then:
 
-**Flask server won't start / `Address already in use`**
-Port 5000 is occupied by another process. Either stop that process, or change `FLASK_PORT` in
-`backend/config.py`.
+```bash
+pip install ultralytics flask pandas opencv-python pillow
+```
 
-**`sqlite3.OperationalError: unable to open database file`**
-The `backend/database/` folder is missing or not writable. Ensure the app has write permissions to the
-project folder; the folder is created automatically on startup via `config.ensure_directories_exist()`.
+---
 
-**YOLO model fails to load / `RuntimeError: Could not load YOLO model`**
-Confirm `backend/models/best.pt` or `backend/models/yolov8n.pt` exists and is a valid `.pt` file, or
-ensure you have internet access so Ultralytics can auto-download `yolov8n.pt`.
+### Problem: App detects cars / motorcycles instead of road damage
 
-**CORS errors in the browser console**
-Make sure you are opening the app via the Flask server URL (`http://127.0.0.1:5000/`) rather than opening
-`index.html` directly as a `file://` URL, and confirm `flask-cors` is installed.
+**Solution:**
+The wrong model (`best.pt`) is being used.
 
-**Frontend loads but "Run detection" does nothing**
-Open the browser console (F12) for errors. Confirm the backend is running and reachable at
-`http://127.0.0.1:5000`, and that no ad-blocker/extension is blocking `fetch`/`XHR` requests.
+- Replace `backend/models/best.pt` with the road-damage model (67 MB)
+- The correct model detects: Pothole, Longitudinal Crack, Transverse Crack, Alligator Crack, Other
+- Check terminal output for class names — if you see `['person', 'car', ...]`, the model is wrong
 
-**Uploaded file is rejected as "unsupported extension"**
-Only `.jpg/.jpeg/.png` (images) and `.mp4/.avi/.mov` (videos) are accepted. Rename or convert your file.
+---
 
-**`413 Request Entity Too Large`**
-The file exceeds the 200MB limit set by `MAX_CONTENT_LENGTH` in `backend/config.py`. Either compress the
-file or raise the limit in `config.py`.
+### Problem: Port 5000 already in use
 
-## Frequently asked questions
+**Solution:**
+Close other applications using port 5000.
 
-**Q: Do I need a GPU?**
-No — the app runs on CPU by default via Ultralytics, though inference (especially on video) is faster with
-a CUDA-capable GPU and the GPU build of PyTorch installed.
+Or change port in `backend/config.py`:
 
-**Q: Can I use my own trained model?**
-Yes. Export your trained weights as `best.pt` and place them in `backend/models/`. The app will use it
-automatically on next restart.
+```python
+FLASK_PORT = 5001
+```
 
-**Q: Where are my uploaded and output files stored?**
-Raw uploads: `backend/uploads/`. Annotated results: `backend/outputs/`. CSV reports: `backend/reports/`.
+Then open:
+[http://localhost:5001](http://localhost:5001)
 
-**Q: How do I reset all history?**
-Stop the server, delete `backend/database/road_damage.db`, and restart — a fresh, empty database will be
-created automatically.
+---
 
-## Future improvements
+### Problem: `ERR_CONNECTION_REFUSED` in browser
 
-- User authentication and per-user detection history
-- Real-time webcam/live-stream detection
-- Model retraining pipeline and dataset management UI
-- Map-based geotagging of detections (if GPS EXIF/metadata is available)
-- Pagination and advanced filtering on the history page
-- Docker Compose setup for one-command deployment
+**Solution:**
+The Flask server is not running.
 
-## Deployment suggestions
+- Make sure you activated the virtual environment: `venv\Scripts\activate`
+- Make sure you are in the `backend` folder
+- Run: `python app.py`
+- Wait for `Running on http://127.0.0.1:5000`
 
-- Run behind a production WSGI server such as **gunicorn** (Linux/macOS) or **waitress** (Windows) instead
-  of Flask's built-in development server.
-- Serve the `frontend/` folder via a reverse proxy (e.g. Nginx) in front of the Flask API for better static
-  asset performance.
-- Store `uploads/`, `outputs/`, and the SQLite database on persistent volumes if deploying in a container.
-- Set `FLASK_DEBUG = False` in `backend/config.py` before deploying to production.
+---
 
-## License
+### Problem: `ModuleNotFoundError: No module named 'cv2'`
 
-This project is provided as an educational/portfolio reference implementation. You are free to use, modify,
-and extend it for personal, academic, or commercial purposes.
+**Solution:**
 
-## Author
+```bash
+pip install opencv-python
+```
 
-**Teki Akhil Venkat**
+---
 
-B.Tech – Computer Science / AIML
+### Problem: Python 3.14 compatibility errors
 
-## License
+**Solution:**
+Python 3.14 is too new.
 
-AI Road Damage Detection System Using
-Python, YOLOv8, Flask, OpenCV and SQLite.
+- Uninstall Python 3.14
+- Install Python 3.11
+- Delete old `venv` folder
+- Recreate: `python -m venv venv`
+- Activate: `venv\Scripts\activate`
+- Reinstall: `pip install -r requirements.txt`
+
+---
+
+### Problem: Video upload takes very long
+
+**Solution:**
+Video processing runs YOLOv8 on every frame.
+
+- Use shorter videos (under 30 seconds)
+- Lower resolution videos process faster
+- The system processes frames sequentially — be patient
+
+---
+
+# 🌍 Deployment
+
+This project can be deployed to:
+
+- **Render**
+- **Railway**
+- **Heroku**
+- **PythonAnywhere**
+- **AWS EC2**
+- **Google Cloud Run**
+
+For deployment, make sure to:
+
+1. Use a production WSGI server (gunicorn):
+   ```bash
+   pip install gunicorn
+   gunicorn -w 4 -b 0.0.0.0:5000 app:app
+   ```
+
+2. Set `FLASK_DEBUG = False` in `config.py`
+
+3. Ensure `best.pt` is included in the deployment package
+
+---
+
+# 📝 Project Information
+
+| Detail | Value |
+|----------------------|--------------------------------------------------|
+| Project Name | Road Damage AI System |
+| Version | 1.0.0 |
+| Author | Teki Akhil Venkat |
+| Department | Computer Science (AIML) |
+| GitHub | [akhilvenkat667/Road-Damage-AI-System-2026](https://github.com/akhilvenkat667/Road-Damage-AI-System-2026) |
+| License | MIT |
+
+---
+
+Would you like me to save this as a file (README.md or a Word document) that you can include in your project?
