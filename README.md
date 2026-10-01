@@ -539,10 +539,15 @@ For deployment, make sure to:
 
 This project is intended for educational and demonstration purposes.
 
-Author
+##Author
 
-Teki Akhil Venkat
+**Teki Akhil Venkat**
 
 B.Tech – Computer Science / AIML
 
 GitHub: https://github.com/akhilvenkat667/Road-Damage-AI-System-2026
+
+## License
+
+This project is intended for educational and demonstration purposes.
+
