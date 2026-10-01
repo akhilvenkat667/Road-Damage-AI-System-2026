@@ -539,7 +539,9 @@ For deployment, make sure to:
 
 This project is intended for educational and demonstration purposes.
 
-Author: Teki Akhil Venkat
+Author
+
+Teki Akhil Venkat
 
 B.Tech – Computer Science / AIML
 
