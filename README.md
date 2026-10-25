@@ -537,8 +537,6 @@ For deployment, make sure to:
 
 ---
 
-This project is intended for educational and demonstration purposes.
-
 
 ## Author
 
